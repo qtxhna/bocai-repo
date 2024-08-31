@@ -1,0 +1,61 @@
+[1个计分版 聊天框输入]
+/scoreboard objectives add 进度 dummy
+
+[开箱部分]
+[第一条循环 其余全部连锁 无条件 长开 0延迟]
+
+execute @a[scores={进度=1..}] ~~~ titleraw @s actionbar {"rawtext":[{"translate":"%%7","with":{"rawtext":[{"selector":"@s[scores={进度=10..}]"},{"selector":"@s[scores={进度=20..}]"},{"selector":"@s[scores={进度=30..}]"},{"selector":"@s[scores={进度=40..}]"},{"selector":"@s[scores={进度=50..}]"},{"selector":"@s[scores={进度=60..}]"},{"text":"§r"},{"text":"§l§o§d▆▆▆▆▆§f▆▆▆▆▆  §r50%§r"},{"text":"§l§o§c▆▆▆▆§f▆▆▆▆▆▆  §r40%§r"},{"text":"§l§o§c▆▆▆§f▆▆▆▆▆▆▆  §r30%§r"},{"text":"§l§o§4▆▆§f▆▆▆▆▆▆▆▆  §r20%§r"},{"text":"§l§o§4▆§f▆▆▆▆▆▆▆▆▆  §r10%§r"}]}},{"translate":"%%6","with":{"rawtext":[{"selector":"@s[scores={进度=60..}]"},{"selector":"@s[scores={进度=70..}]"},{"selector":"@s[scores={进度=80..}]"},{"selector":"@s[scores={进度=90..}]"},{"selector":"@s[scores={进度=100..}]"},{"text":"§l§o§e▆▆▆▆▆▆▆▆▆▆  §r100%§r"},{"text":"§l§o§e▆▆▆▆▆▆▆▆▆§f▆  §r90%§r"},{"text":"§l§o§6▆▆▆▆▆▆▆▆§f▆▆  §r80%§r"},{"text":"§l§o§6▆▆▆▆▆▆▆§f▆▆▆  §r70%§r"},{"text":"§l§o§d▆▆▆▆▆▆§f▆▆▆▆  §r60%§r"},{"text":"§r"}]}}]}
+
+tag @a[tag=进度] remove 进度
+
+execute @a ~ ~ ~ detect ~ ~-0.1 ~ copper_block 0 tag @s add 进度
+
+execute @a ~ ~ ~ detect ~ ~-0.1 ~ iron_block 0 tag @s add 进度
+
+execute @a ~ ~ ~ detect ~ ~-0.1 ~ gold_block 0 tag @s add 进度
+
+execute @a ~ ~ ~ detect ~ ~-0.1 ~ diamond_block 0 tag @s add 进度
+
+execute @a ~ ~ ~ detect ~ ~-0.1 ~ emerald_block 0 tag @s add 进度
+
+execute @a ~ ~ ~ detect ~ ~-0.1 ~ netherite_block 0 tag @s add 进度
+
+scoreboard players add @a[tag=进度] 进度 1
+
+scoreboard players set @a[tag=!进度,scores={进度=1..}] 进度 0
+
+scoreboard players set @a[scores={进度=101..}] 进度 0
+
+execute @a[scores={进度=100}] ~ ~ ~ detect ~ ~-0.1 ~ copper_block 0 structure load "铜箱" <坐标>
+
+execute @a[scores={进度=100}] ~ ~ ~ detect ~ ~-0.1 ~ iron_block 0 structure load "铁箱" <坐标>
+
+execute @a[scores={进度=100}] ~ ~ ~ detect ~ ~-0.1 ~ gold_block 0 structure load "金箱" <坐标>
+
+execute @a[scores={进度=100}] ~ ~ ~ detect ~ ~-0.1 ~ diamond_block 0 structure load "钻箱" <坐标>
+
+execute @a[scores={进度=100}] ~ ~ ~ detect ~ ~-0.1 ~ emerald_block 0 structure load "绿箱" <坐标>
+
+execute @a[scores={进度=100}] ~ ~ ~ detect ~ ~-0.1 ~ netherite_block 0 structure load "合箱" <坐标>
+
+setblock <坐标> air 0 destroy
+
+tag @e[type=item,name=!"箱子",c=1,dx=1,dy=1,dz=1,x=●,y=●,z=●] add 物品
+
+tp @e[tag=物品] @a[scores={进度=100..}]
+
+kill @e[type=item,tag=!物品,dx=1,dy=1,dz=1,x=●,y=●,z=●]
+
+execute @a[scores={进度=100}] ~ ~ ~ detect ~ ~-0.1 ~  copper_block 0 structure load "铜块" ~~-1~ 0_degrees none layer_by_layer <延时值>
+
+execute @a[scores={进度=100}] ~ ~ ~ detect ~ ~-0.1 ~ iron_block 0 structure load "铁块" ~~-1~ 0_degrees none layer_by_layer <延时值>
+
+execute @a[scores={进度=100}] ~ ~ ~ detect ~ ~-0.1 ~ gold_block 0 structure load "金块" ~~-1~ 0_degrees none layer_by_layer <延时值>
+
+execute @a[scores={进度=100}] ~ ~ ~ detect ~ ~-0.1 ~ diamond_block 0 structure load "钻石块" ~~-1~ 0_degrees none layer_by_layer <延时值>
+
+execute @a[scores={进度=100}] ~ ~ ~ detect ~ ~-0.1 ~ emerald_block 0 structure load "绿宝石块" ~~-1~ 0_degrees none layer_by_layer <延时值>
+
+execute @a[scores={进度=100}] ~ ~ ~ detect ~ ~-0.1 ~ netherite_block 0 structure load "合金块" ~~-1~ 0_degrees none layer_by_layer <延时值>
+
+execute @a[scores={进度=100..}] ~~~ fill ~ ~-1 ~ ~ ~-1 ~ target

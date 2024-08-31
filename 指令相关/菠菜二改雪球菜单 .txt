@@ -1,0 +1,144 @@
+-Fin.转新 1.20可用（菠菜精简二改）
+
+前置指令:
+
+1./scoreboard objectives add 生存菜单 dummy
+脉冲无条件红石控制➕拉杆启动
+
+2./gamerule commandblockoutput false
+脉冲无条件红石控制➕拉杆启动
+
+3./tickingarea add circle ~~~ 2 指令区
+脉冲无条件红石控制➕拉杆启动
+
+
+一、菜单基础运行:
+
+1.give @a[hasitem={item=snowball,data=1,quantity=0}] snowball 16 1 {"minecraft:item_lock":{"mode":"lock_in_inventory"}}
+循环无条件保持开启
+
+
+2.execute as @e[type=snowball] at @s run scoreboard players add @p[r=2] 生存菜单 1
+连锁无条件保持开启
+
+
+3.execute as @e[type=snowball] at @s run playsound random.toast @p
+连锁无条件保持开启
+
+
+4.kill @e[type=snowball]
+连锁无条件保持开启
+
+
+5.execute as @a[scores={生存菜单=1..5}] at @s run titleraw @s actionbar {"rawtext":[{"text":"§b   『雪球菜单』\n▶==================◀\n"},{"translate":"%%2","with":{"rawtext":[{"selector":"@s[scores={生存菜单=1}]"},{"text":"   §f"},{"text":"   §7"}]}},{"text":"①.『返回主城』\n"},{"translate":"%%2","with":{"rawtext":[{"selector":"@s[scores={生存菜单=2}]"},{"text":"   §f"},{"text":"   §7"}]}},{"text":"②.『原地升天』\n"},{"translate":"%%2","with":{"rawtext":[{"selector":"@s[scores={生存菜单=3}]"},{"text":"   §f"},{"text":"   §7"}]}},{"text":"③.『接受传送』\n"},{"translate":"%%2","with":{"rawtext":[{"selector":"@s[scores={生存菜单=4}]"},{"text":"   §f"},{"text":"   §7"}]}},{"text":"④.『发起传送』\n"},{"translate":"%%2","with":{"rawtext":[{"selector":"@s[scores={生存菜单=5}]"},{"text":"   §f"},{"text":"   §7"}]}},{"text":"⑤.『设置重生点』\n§b▶==================◀\n§a抬头确定✔ §c低头关闭✘\n\n\n\n\n"}]}
+连锁无条件保持开启
+
+
+6.execute as @a[scores={生存菜单=6}] at @s run scoreboard players set @s 生存菜单 1
+连锁无条件保持开启
+
+
+7.execute as @a[scores={生存菜单=!0},rxm=88] at @s run title @s actionbar §l§c已关闭菜单
+连锁无条件保持开启
+
+
+8.execute as @a[scores={生存菜单=!0},rxm=88] at @s run scoreboard players set @s 生存菜单 0
+连锁无条件保持开启
+
+
+二、用于实现的指令
+
+
+
+1.tp @a[scores={生存菜单=1},rx=-88] 坐标
+循环无条件保持开启
+
+
+2.tp @a[scores={生存菜单=2},rx=-88] 坐标
+连锁无条件保持开启
+
+
+3.接受传送
+连锁无条件保持开启
+
+
+4.发起传送
+连锁无条件保持开启
+
+
+5.execute as @a[scores={生存菜单=5},rx=-88] at @s run spawnpoint @s
+连锁无条件保持开启
+
+
+6.execute as @a[scores={生存菜单=!4},rx=-88] at @s run title @s actionbar §l§b传送成功✔
+连锁无条件保持开启
+
+
+7.execute as @a[scores={生存菜单=!4},rx=-88] at @s run scoreboard players set @s 生存菜单 0
+连锁无条件保持开启
+
+七、玩家互传（注意有些命令方块是有条件）
+
+1.title @a[scores={生存菜单=4},rx=-88] title §l§b发起传送成功，请等待同意。
+循环无条件保持开启
+
+
+2.title @a[scores={生存菜单=4},rx=-88] subtitle §a一分钟后无人同意自动取消。
+连锁无条件保持开启
+
+
+3.tag @a[scores={生存菜单=4},rx=-88] add 传送
+连锁无条件保持开启
+
+
+4.execute if entity @a[scores={生存菜单=4},rx=-88] run scoreboard players set 计时 生存菜单 60
+连锁无条件保持开启
+
+
+5.say 玩家§l§e @a[tag=传送] §r发起了传送，打开生存菜单接受传送即可将他传送过来。
+连锁有条件保持开启➕全服公告
+
+
+6.tp @a[tag=传送] @a[scores={生存菜单=3},rx=-88]
+连锁无条件保持开启
+
+
+7.say 已将玩家§l§e @a[tag=传送] §r传送至§l§e @a[scores={生存菜单=4},rx=-88]
+连锁有条件保持开启➕全服公告
+
+
+8.tag @a remove 传送
+连锁有条件保持开启
+
+八.接受传送
+
+
+9.execute if entity @a[tag=传送] run titleraw @a[scores={生存菜单=0}] actionbar {"rawtext":[{"text":"§l§b传送请求倒计时§f: "},{"score":{"name":"计时","objective":"生存菜单"}}]}
+连锁无条件保持开启
+
+
+10.scoreboard players set @a[scores={生存菜单=3..4},rx=-88] 生存菜单 0
+连锁无条件保持开启
+
+
+11.scoreboard players set @a[scores={生存菜单=43}] 生存菜单 40
+连锁无条件保持开启
+
+
+12.scoreboard players test 计时 生存菜单 0 60 
+循环无条件保持开启 延迟20
+
+
+13.scoreboard players remove 计时 生存菜单 1
+连锁有条件保持开启
+
+
+八.超时判断
+
+
+14.execute if score 计时 生存菜单 matches ..0 tag @a remove 传送
+连锁无条件保持开启
+
+
+15.say 超时无人同意，已自动取消传送请求。
+连锁有条件保持开启➕全服公告

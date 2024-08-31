@@ -1,0 +1,32 @@
+@p	距离最近的玩家
+@r	随机玩家
+@a	所有玩家
+@e	所有实体
+@s	命令的执行者
+@initiator	与NPC交互的玩家
+
+目标选择器参数汇总
+	通过坐标
+		x, y, z	坐标
+		r、rm	距离
+		dx, dy, dz	体积尺寸
+	通过记分板参数
+		scores	记分项分数
+		tag	记分板标签
+	通过实体种类
+		name	实体名称
+		type	实体类型
+		family	族（见族大全）
+	通过实体数据
+		rx、rxm	垂直旋转角度（90为低头，-90为抬头）
+		ry、rym	水平旋转角度
+		hasitem	物品
+		has_property	实体属性
+	通过玩家数据
+		l、lm	经验等级
+		m	游戏模式
+		haspermission	权限
+	其他
+		c	数量
+
+tips:摘自中文Minecraft Wiki

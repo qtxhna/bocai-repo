@@ -1,0 +1,101 @@
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科火焰=1..,形态=2}] at @s run particle minecraft:basic_flame_particle ^^1^1
+重复无条件保持开启延迟5
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科火焰=1..,形态=2}] at @s run particle minecraft:basic_flame_particle ^0.4^1^2
+连锁无条件保持开启延迟0
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科火焰=1..,形态=2}] at @s run particle minecraft:basic_flame_particle ^-0.4^1^2
+连锁无条件保持开启延迟0
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科火焰=1..,形态=2}] at @s run particle minecraft:basic_flame_particle ^^1^3
+连锁无条件保持开启延迟0
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科火焰=1..,形态=2}] at @s run particle minecraft:basic_flame_particle ^0.4^1^3
+连锁无条件保持开启延迟0
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科火焰=1..,形态=2}] at @s run particle minecraft:basic_flame_particle ^-0.4^1^3
+连锁无条件保持开启延迟0
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科火焰=1..,形态=2}] at @s run particle minecraft:basic_flame_particle ^-0.4^1^3
+连锁无条件保持开启延迟0
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科火焰=1..,形态=2}] at @s run particle minecraft:basic_flame_particle ^-0.4^1^3
+连锁无条件保持开启延迟0
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科火焰=1..,形态=2}] at @s run particle minecraft:basic_flame_particle ^1.4^1^4
+连锁无条件保持开启延迟0
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科火焰=1..,形态=2}] at @s run particle minecraft:basic_flame_particle ^-1.4^1^4
+连锁无条件保持开启延迟0
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科火焰=1..,形态=2}] at @s run particle minecraft:basic_flame_particle ^^1^5
+连锁无条件保持开启延迟0
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科火焰=1..,形态=2}] at @s run particle minecraft:basic_flame_particle ^0.4^1^5
+连锁无条件保持开启延迟0
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科火焰=1..,形态=2}] at @s run particle minecraft:basic_flame_particle ^-0.4^1^5
+连锁无条件保持开启延迟0
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科火焰=1..,形态=2}] at @s run particle minecraft:basic_flame_particle ^1.4^1^5
+连锁无条件保持开启延迟0
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科火焰=1..,形态=2}] at @s run particle minecraft:basic_flame_particle ^-1.4^1^5
+连锁无条件保持开启延迟0
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科火焰=1..,形态=2}] at @s run playsound mob.blaze.shoot @s ~~~ 1.3 1.2
+连锁无条件保持开启延迟0
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科火焰=1..,形态=2}] at @s positioned ^^1^2.5 run damage @e[r=2.8,type=!armor_stand,type=!boat,type=!painting,type=!item,tag=!op] 7 entity_attack entity @s
+连锁无条件保持开启延迟0
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科火焰=1..,形态=2}] at @s run scoreboard players remove @s 德拉科火焰 1
+连锁无条件保持开启延迟0
+
+
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科弹药=1..,形态=1}] at @s run particle minecraft:critical_hit_emitter ^^2^1
+重复无条件保持开启延迟30
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科弹药=1..,形态=1}] at @s run particle minecraft:critical_hit_emitter ^^2^3
+连锁无条件保持开启延迟0
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科弹药=1..,形态=1}] at @s run particle minecraft:critical_hit_emitter ^^2^2
+连锁无条件保持开启延迟0
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科弹药=1..,形态=1}] at @s run particle minecraft:knockback_roar_particle ^^2^4
+连锁无条件保持开启延迟0
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科弹药=1..,形态=1}] at @s run playsound item.trident.throw @s ~~~ 5 0.88
+连锁有条件保持开启延迟0
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科弹药=1..,形态=1}] at @s positioned ^^1^2.3 run damage @e[r=2.1,type=!armor_stand,type=!item,tag=!op] 37 entity_attack entity @s
+连锁有条件保持开启延迟0
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科弹药=1..,形态=1}] at @s positioned ^^1^4 run damage @e[r=1.3,type=!armor_stand,type=!item,tag=!op] 20 entity_attack entity @s
+连锁无条件保持开启延迟0
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={德拉科弹药=1..,形态=1}] at @s run scoreboard players remove @s 德拉科弹药 1
+连锁无条件保持开启延迟0
+
+
+scoreboard players add @a[tag=op,scores={形态=1}] 德拉科弹药 1
+重复无条件保持开启延迟100
+scoreboard players set @a[tag=op,scores={德拉科弹药=3..}] 德拉科弹药 3
+连锁无条件保持开启延迟0
+
+
+scoreboard players add @a[tag=op,scores={形态=2}] 德拉科火焰 1
+重复无条件保持开启延迟65
+scoreboard players set @a[tag=op,scores={德拉科火焰=80..}] 德拉科火焰 80
+连锁无条件保持开启延迟0
+
+
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={形态=1},rxm=89] at @s run scoreboard players set @s 形态 2
+重复无条件保持开启延迟5
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={形态=2},rxm=89] at @s run tp @s ~~~ facing ^^3^1
+连锁有条件保持开启延迟0
+
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={形态=2},rxm=89] at @s run scoreboard players set @s 形态 1
+重复无条件保持开启延迟5
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={形态=1},rxm=89] at @s run tp @s ~~~ facing ^^3^1
+连锁有条件保持开启延迟0
+
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={形态=1}] at @s run titleraw @s actionbar {"rawtext":[{"text":"§7-§f-----§e>§6>§c> §e「传说」 §4德拉科 §c<§6<§e<§f-----§7-\n         §a剩余弹药§7： "},{"score":{"name":"*","objective":"德拉科弹药"}},{"text":"§f/§43   \n§e§l ۞§r§e等级： Ｌｖ.11\n§d§l ۞§r§d伤害：37/次\n§b§l ۞§r§b移动速度：中等\n§7§l ۞§r§7装弹速度:慢\n§2§l ۞§r§2射程:近\n§6§l ۞§r§6特性:剑刺长枪 > \n§7德拉科可在攻击最远处造成额外伤害！\n§c§l ۞§r§c当前形态：人形\n    低头转换形态"}]}
+重复无条件保持开启延迟5
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={形态=2}] at @s run titleraw @s actionbar {"rawtext":[{"text":"§7-§f-----§e>§6>§c> §e「传说」 §4德拉科 §c<§6<§e<§f-----§7-\n         §a剩余弹药§7： "},{"score":{"name":"*","objective":"德拉科火焰"}},{"text":"§f/§480   \n§e§l ۞§r§e等级： Ｌｖ.11\n§d§l ۞§r§d伤害：8/s\n§b§l ۞§r§b移动速度：快\n§7§l ۞§r§7装弹速度:中等\n§2§l ۞§r§2射程:近\n§6§l ۞§r§6特性:驭龙独秀 > \n§7德拉科获得速度加成与伤害减免！\n§c§l ۞§r§c当前形态：龙形\n    低头转换形态"}]}
+连锁无条件保持开启延迟0
+
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={形态=2}] at @s run effect @s speed 6 1 true
+重复无条件保持开启延迟20
+execute as @a[tag=op,hasitem={item=danger_pottery_sherd,location=slot.weapon.mainhand},scores={形态=2}] at @s run effect @s resistance 6 1 true
+连锁无条件保持开启延迟0
+
+
+
+
+
+
+
+
+
+
+
+
+
+

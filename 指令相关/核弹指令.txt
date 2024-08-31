@@ -1,0 +1,101 @@
+﻿核弹指令
+
+【一个计分板】
+
+/scoreboard objectives add 核弹 dummy
+
+
+
+
+
+【第一个循环，其余全部连锁】
+
+
+
+execute @e[type=npc,name=核] ~~~ summon minecraft:armor_stand 核弹 ~ ~ ~ 
+
+
+
+kill @e[type=npc,name=核]
+
+
+
+↑↑↑↑↑
+
+上面这两条是触发核弹的方式，可以自行修改
+
+
+
+execute @e[name=核弹,type=minecraft:armor_stand] ~~~ particle minecraft:huge_explosion_lab_misc_emitter ^^^13
+
+
+
+execute @e[name=核弹,type=minecraft:armor_stand] ~~~ particle minecraft:huge_explosion_lab_misc_emitter ^^^-13
+
+
+
+execute @e[name=核弹,type=minecraft:armor_stand] ~~~ particle minecraft:huge_explosion_lab_misc_emitter ^13^^
+
+
+
+execute @e[name=核弹,type=minecraft:armor_stand] ~~~ particle minecraft:huge_explosion_lab_misc_emitter ^-13^^
+
+
+
+execute @e[name=核弹,type=minecraft:armor_stand] ~~~ particle minecraft:huge_explosion_lab_misc_emitter ^^2^
+
+
+
+execute @e[name=核弹,type=minecraft:armor_stand] ~~~ particle minecraft:huge_explosion_lab_misc_emitter ^^-50^
+
+
+
+execute @e[name=核弹,type=minecraft:armor_stand] ~~~ particle minecraft:huge_explosion_lab_misc_emitter ^^-40^
+
+
+
+execute @e[name=核弹,type=minecraft:armor_stand] ~~~ particle minecraft:huge_explosion_lab_misc_emitter ^^-30^
+
+
+
+execute @e[name=核弹,type=minecraft:armor_stand] ~~~ particle minecraft:huge_explosion_lab_misc_emitter ^^-19^
+
+
+
+execute @e[name=核弹,type=minecraft:armor_stand] ~~~ particle minecraft:huge_explosion_lab_misc_emitter ^^-10^
+
+
+
+scoreboard players add @e[type=minecraft:armor_stand,name=核弹] 核弹 1
+
+
+
+execute @e[type=minecraft:armor_stand,name=核弹,scores={核弹=1..}] ~~~ tp @s ~~0.2~~40
+
+
+
+execute @e[type=minecraft:armor_stand,name=核弹,scores={核弹=1}] ~~~ execute @a[r=120] ~~~ playsound random.explode @s ~ ~ ~
+
+
+
+kill @e[type=minecraft:armor_stand,name=核弹,scores={核弹=260..}]
+
+
+
+effect @e[type=minecraft:armor_stand,name=核弹] invisibility 2 0 true
+
+
+
+execute @e[type=minecraft:armor_stand,name=核弹] ~~~ kill @e[r=30,type=!minecraft:armor_stand,name=!核弹]
+
+
+
+execute @e[type=minecraft:armor_stand,name=核弹] ~~~ effect @e[r=60,rm=30,type=!minecraft:armor_stand,name=!核弹,scores={核弹=1}] instant_damage 1 1 true
+
+
+
+execute @e[type=minecraft:armor_stand,name=核弹] ~~~ effect @e[r=100,rm=30,type=!minecraft:armor_stand,name=!核弹,scores={核弹=1}] nausea 30 1 true
+
+
+
+execute @e[type=minecraft:armor_stand,name=核] ~~~ effect @e[r=100,rm=30,type=!minecraft:armor_stand,name=!核弹,scores={核弹=1}] wither 30 0 true

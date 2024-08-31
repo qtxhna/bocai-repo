@@ -1,0 +1,47 @@
+§0	black 黑色
+§1	dark_blue 深红色
+§2	dark_green 深绿色
+§3	dark_aqua 深青色
+§4	dark_red 深红色
+§5	dark_purple 深紫色
+§6	gold 金色
+§7	gray 灰色
+§8	dark_gray 深灰色
+§9	blue 蓝色
+§a	green 绿色
+§b	aqua 青色
+§c	red 红色
+§d	light_purple 亮紫色
+§e	yellow 黄色
+§f	white 白色
+§g	minecoin_gold 金币色
+§h	material_quartz 石英色
+§i	material_iron 铁色
+§j	material_netherite 下界合金色
+§m	material_redstone 红石色
+§n	material_copper 铜色
+§p	material_gold 金锭色
+§q	material_emerald 绿宝石色
+§s	material_diamond 钻石色
+§t	material_lapis 青金石色
+§u	material_amethyst 紫水晶色
+§k	随机
+§l	粗体	
+§m	删除线
+§n	下划线
+§o	斜体
+§r	重置
+
+tips：以上内容摘自中文Minecraft Wiki
+
+
+
+
+
+
+
+
+§r§e波兰球和兔兔 加入了游戏
+§r§e复习的远古狼 加入了游戏
+§r§e天完老b 加入了游戏
+

@@ -1,0 +1,16 @@
+scoreboard objectives add 记刻 dummy
+scoreboard objectives add 计秒 dummy
+scoreboard objectives add 排名 dummy
+scoreboard objectives add 历史时间 dummy
+
+scoreboard players set 排名 人数 0
+gamemode a @a[tag=冰船比赛]
+
+scoreboard players add @a[tag=冰船比赛] 记刻 5
+scoreboard players add @a[scores={记刻=99..}] 记秒 1
+scoreboard players set @a[scores={记刻=99..}] 记刻 0
+execute if entity @a[x=-1635,y=231,z=2955,dx=-20,dy=5,dz=10,tag=冰船比赛] run scoreboard players add 排名 通过人数 1
+有条件scoreboard players operation @a[x=-1635,y=231,z=2955,dx=-20,dy=5,dz=10,tag=冰船比赛] 排名 = 通过人数 排名
+有条件execute as @a if score @s[tag=!冰船比赛] 计秒 > @s 历史时间 run scoreboard players operation @s 历史时间 = @s 计秒
+有条件tag @a[x=-1635,y=231,z=2955,dx=-20,dy=5,dz=10,tag=冰船比赛] remove 冰船比赛
+

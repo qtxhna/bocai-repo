@@ -1,0 +1,13 @@
+[单独一条 循环 无条件 常开 延迟20]
+execute @a[rxm=-45,rx=45] ~~-2~ execute @e[type=horse,r=1] ~~~ effect @s levitation 1 0 true
+
+[第一条 循环 无条件 常开 延迟0 其它均为连锁]
+execute @a[rx=-45] ~~-2~ execute @e[type=horse,r=1] ~~~ effect @s levitation 1 1 true
+
+execute @a[rxm=45] ~~-2~ execute @e[type=horse,r=1] ~~~ effect @s slow_falling 1 0 true
+
+execute @a ~~-2~ execute @e[type=horse,r=1] ~~~ detect ~~-1~ air 0 effect @s speed 1 20 true
+
+execute @a ~~-2~ execute @e[type=horse,r=1] ~~~ detect ~~-1~ light_block 15 effect @s speed 1 20 true
+
+execute @a[rxm=-45,rx=45] ~~-2~ execute @e[type=horse,r=1] ~~~ effect @s slow_falling 1 0 true

@@ -1,0 +1,32 @@
+防秒退狗系统
+[一个积分板 聊天框输入即可]
+/scoreboard objectives add 退 dummy
+
+
+进入地图前给予 "tag" "战场" 标签 即可激活该玩家秒退处罚
+
+
+[后台部分 第一个循环 其它全部连锁 长开 0延迟]
+①
+scoreboard players set @a[tag=战场] 退 1
+
+②
+tag @a[tag=战场] add 游戏中
+
+③
+tag @a[tag=战场] remove 战场
+
+④
+scoreboard players add @a[tag=游戏中] 退 0
+
+⑤
+execute @a[tag=游戏中,scores={退=0}] ~~~ kill @s
+
+⑥
+execute @a[tag=游戏中,scores={退=0}] ~~~ tag @s remove 游戏中
+
+⑦
+scoreboard players reset * 退
+
+⑧
+execute @a[tag=游戏中] ~~~ scoreboard players set @s 退 1

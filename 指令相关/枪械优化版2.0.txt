@@ -1,0 +1,2059 @@
+﻿枪械优化版♥2.0
+
+[20个记分板，聊天框输入即可]♥
+
+/scoreboard objectives add 手枪 dummy
+
+/scoreboard objectives add 步枪 dummy
+
+/scoreboard objectives add 狙枪 dummy
+
+/scoreboard objectives add 冲锋枪 dummy
+
+/scoreboard objectives add 状态 dummy
+
+/scoreboard objectives add 状态a dummy
+
+/scoreboard objectives add 头部 dummy
+
+/scoreboard objectives add 身躯 dummy
+
+/scoreboard objectives add 腿部 dummy
+
+/scoreboard objectives add 自动 dummy
+
+/scoreboard objectives add 射速 dummy
+
+/scoreboard objectives add 换弹 dummy
+
+/scoreboard objectives add 弹夹 dummy
+
+/scoreboard objectives add 弹夹a dummy
+
+/scoreboard objectives add 弹夹b dummy
+
+/scoreboard objectives add 弹夹c dummy
+
+/scoreboard objectives add 弹夹d dummy
+
+/scoreboard objectives add 伤害 dummy
+
+/scoreboard objectives add 伤害a dummy
+
+/scoreboard objectives add qx种类 dummy
+
+–––––––––––划分线–––––––––
+
+[第一个循环，其他全部连锁，无条件，常开]
+
+[射速]♥
+
+scoreboard players remove @a[scores={qx种类=1,射速=1..}] 射速 5
+
+
+
+scoreboard players remove @a[scores={qx种类=2,射速=1..}] 射速 10
+
+
+
+scoreboard players remove @a[scores={qx种类=3,射速=1..}] 射速 2
+
+
+
+scoreboard players remove @a[scores={qx种类=4,射速=1..}] 射速 20
+
+
+
+[枪械伤害设置与添加]♥
+
+scoreboard players add @a 头部 0
+
+
+
+scoreboard players add @a 身躯 0
+
+
+
+scoreboard players add @a 腿部 0
+
+
+
+scoreboard players add @a qx种类 0
+
+
+
+scoreboard players add @a 手枪 0
+
+
+
+scoreboard players add @a 步枪 0
+
+
+
+scoreboard players add @a 狙枪 0
+
+
+
+scoreboard players add @a 冲锋枪 0
+
+
+
+scoreboard players add @a 伤害 0
+
+
+
+scoreboard players add @a[scores={头部=0}] 头部 100
+
+
+
+scoreboard players add @a[scores={身躯=0}] 身躯 100
+
+
+
+scoreboard players add @a[scores={腿部=0}] 腿部 100
+
+
+
+scoreboard players add @a[scores={手枪=0}] 手枪 20
+
+
+
+scoreboard players add @a[scores={步枪=0}] 步枪 10
+
+
+
+scoreboard players add @a[scores={狙枪=0}] 狙枪 40
+
+
+
+scoreboard players add @a[scores={冲锋枪=0}] 冲锋枪 6
+
+
+
+scoreboard players add @a[scores={qx种类=0}] qx种类 1
+
+
+
+[枪械伤害升级模块]♥
+
+scoreboard players add @a[scores={qx种类=1},hasitem={item=heart_of_the_sea,quantity=1..,location=slot.hotbar}] 手枪 3
+
+
+
+scoreboard players add @a[scores={qx种类=2},hasitem={item=heart_of_the_sea,quantity=1..,location=slot.hotbar}] 步枪 2
+
+
+
+scoreboard players add @a[scores={qx种类=3},hasitem={item=heart_of_the_sea,quantity=1..,location=slot.hotbar}] 狙击 4
+
+
+
+scoreboard players add @a[scores={qx种类=4},hasitem={item=heart_of_the_sea,quantity=1..,location=slot.hotbar}] 冲锋枪 1
+
+
+
+tellraw @a[scores={qx种类=1},hasitem={item=heart_of_the_sea,quantity=1..,location=slot.hotbar}] {"rawtext":[{"text":"§l§o§b手枪§c伤害+3"}]}
+
+
+
+tellraw @a[scores={qx种类=2},hasitem={item=heart_of_the_sea,quantity=1..,location=slot.hotbar}] {"rawtext":[{"text":"§l§o§b步枪§c伤害+2"}]}
+
+
+
+tellraw @a[scores={qx种类=3},hasitem={item=heart_of_the_sea,quantity=1..,location=slot.hotbar}] {"rawtext":[{"text":"§l§o§b狙枪§c伤害+4"}]}
+
+
+
+tellraw @a[scores={qx种类=4},hasitem={item=heart_of_the_sea,quantity=1..,location=slot.hotbar}] {"rawtext":[{"text":"§l§o§b冲锋枪§c伤害+1"}]}
+
+
+
+clear @a[hasitem={item=heart_of_the_sea,quantity=1..,location=slot.hotbar}] heart_of_the_sea 0 1
+
+
+
+[激活枪械一些记分板]♥
+
+scoreboard players add @a 状态 0
+
+
+
+scoreboard players add @a 自动 0
+
+
+
+scoreboard players add @a 射速 0
+
+
+
+scoreboard players add @a 换弹 0
+
+
+
+scoreboard players add @a 弹夹 0
+
+
+
+scoreboard players add @a 弹夹a 0
+
+
+
+scoreboard players add @a 弹夹b 0
+
+
+
+scoreboard players add @a 弹夹c 0
+
+
+
+scoreboard players add @a 弹夹d 0
+
+
+
+[枪械准星]♥
+
+title @a[hasitem={item=fishing_rod,location=slot.weapon.mainhand}] title §r
+
+
+
+title @a[scores={qx种类=1,弹夹=1..},hasitem={item=fishing_rod,location=slot.weapon.mainhand}] subtitle §b〒
+
+§c
+
+
+
+title @a[scores={qx种类=2,弹夹=1..},hasitem={item=fishing_rod,location=slot.weapon.mainhand}] subtitle §b+
+
+§c
+
+
+
+title @a[scores={qx种类=3,弹夹=1..},hasitem={item=fishing_rod,location=slot.weapon.mainhand}] subtitle §a⨀
+
+§c
+
+
+
+title @a[scores={qx种类=4,弹夹=1..},hasitem={item=fishing_rod,location=slot.weapon.mainhand}] subtitle §a◸ ◹
+
+◺ ◿
+
+§c
+
+
+
+title @a times 0 40 0
+
+
+
+[匹配枪械伤害]♥
+
+execute @a[scores={qx种类=1},hasitem={item=fishing_rod,location=slot.weapon.mainhand}] ~ ~ ~ scoreboard players operation @s 伤害=@s 手枪
+
+
+
+execute @a[scores={qx种类=2},hasitem={item=fishing_rod,location=slot.weapon.mainhand}] ~ ~ ~ scoreboard players operation @s 伤害=@s 步枪
+
+
+
+execute @a[scores={qx种类=3},hasitem={item=fishing_rod,location=slot.weapon.mainhand}] ~ ~ ~ scoreboard players operation @s 伤害=@s 狙枪
+
+
+
+execute @a[scores={qx种类=4},hasitem={item=fishing_rod,location=slot.weapon.mainhand}] ~ ~ ~ scoreboard players operation @s 伤害=@s 冲锋枪
+
+
+
+[开枪]♥
+
+tellraw @a[scores={自动=0,qx种类=!3},rx=-88] {"rawtext":[{"text":"§l§o§b您开启了§c连射"}]}
+
+
+
+scoreboard players set @a[rx=-88] 自动 1
+
+
+
+tellraw @a[scores={自动=3,qx种类=!3},rxm=88] {"rawtext":[{"text":"§l§o§e您关闭了§c连射"}]}
+
+
+
+scoreboard players set @a[rxm=88] 自动 0
+
+
+
+execute @e[type=minecraft:fishing_hook] ~~~ tag @a[scores={弹夹=1..,射速=0},r=2,hasitem={item=fishing_rod,location=slot.weapon.mainhand}] add 射击
+
+
+
+execute @e[type=minecraft:fishing_hook] ~~~ tag @a[scores={弹夹=1..,射速=0},r=2,hasitem={item=fishing_rod,location=slot.weapon.mainhand}] add 射击a
+
+
+
+execute @e[type=minecraft:fishing_hook] ~~~ scoreboard players add @a[scores={弹夹=1..,射速=0,自动=1..},r=2,hasitem={item=fishing_rod,location=slot.weapon.mainhand}] 自动 1
+
+
+
+scoreboard players set @a[scores={自动=4}] 自动 2
+
+
+
+scoreboard players add @a[scores={弹夹=1..,射速=0},tag=射击,tag=射击a] 射速 100
+
+
+
+[音效]♥
+
+execute @a[tag=射击,scores={qx种类=1}] ~~~ playsound mob.zombie.woodbreak @a[r=30] ~~~ 1 2
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ~~~ playsound mob.zombie.wood @a[r=30] ~~~ 1 5
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ~~~ playsound random.explode @a[r=30] ~ ~ ~ 1 2
+
+
+
+execute @a[tag=射击,scores={qx种类=4}] ~~~ playsound tile.piston.out @a[r=30] ~~~ 1 2
+
+
+
+[视角摇晃]♥
+
+execute @a[tag=射击,scores={qx种类=1}] ~~~ camerashake add @s 2 0.5 positional
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ~~~ camerashake add @s 2 0.2 positional
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ~~~ camerashake add @s 2 0.8 positional
+
+
+
+execute @a[tag=射击,scores={qx种类=4}] ~~~ camerashake add @s 2 0.05 positional
+
+
+
+[扣除子弹]♥
+
+scoreboard players remove @a[tag=射击,scores={qx种类=1}] 弹夹a 1
+
+
+
+scoreboard players remove @a[tag=射击,scores={qx种类=2}] 弹夹b 1
+
+
+
+scoreboard players remove @a[tag=射击,scores={qx种类=3}] 弹夹c 1
+
+
+
+scoreboard players remove @a[tag=射击,scores={qx种类=4}] 弹夹d 1
+
+
+
+[匹配弹夹容量]♥
+
+execute @a[scores={qx种类=1},hasitem={item=fishing_rod,location=slot.weapon.mainhand}] ~ ~ ~ scoreboard players operation @s 弹夹=@s 弹夹a
+
+
+
+execute @a[scores={qx种类=2},hasitem={item=fishing_rod,location=slot.weapon.mainhand}] ~ ~ ~ scoreboard players operation @s 弹夹=@s 弹夹b
+
+
+
+execute @a[scores={qx种类=3},hasitem={item=fishing_rod,location=slot.weapon.mainhand}] ~ ~ ~ scoreboard players operation @s 弹夹=@s 弹夹c
+
+
+
+execute @a[scores={qx种类=4},hasitem={item=fishing_rod,location=slot.weapon.mainhand}] ~ ~ ~ scoreboard players operation @s 弹夹=@s 弹夹d
+
+
+
+[停止自动射击]♥
+
+scoreboard players set @a[scores={弹夹=0}] 自动 -1
+
+
+
+[子弹射程]♥1
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^0.5 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+execute @a[tag=射击] ^ ^0.5 ^1 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=1}] ^ ^1.5 ^1 particle minecraft:balloon_gas_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^1 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^1 particle minecraft:basic_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=4}] ^ ^1.5 ^1 particle minecraft:basic_crit_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^2 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥2
+
+execute @a[tag=射击] ^ ^0.5 ^2 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=1}] ^ ^1.5 ^2 particle minecraft:balloon_gas_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^2 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^2 particle minecraft:basic_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=4}] ^ ^1.5 ^2 particle minecraft:basic_crit_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^3 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥3
+
+execute @a[tag=射击] ^ ^0.5 ^3 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=1}] ^ ^1.5 ^3 particle minecraft:balloon_gas_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^3 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^3 particle minecraft:basic_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=4}] ^ ^1.5 ^3 particle minecraft:basic_crit_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^4 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥4
+
+execute @a[tag=射击] ^ ^0.5 ^4 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=1}] ^ ^1.5 ^4 particle minecraft:balloon_gas_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^4 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^4 particle minecraft:basic_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=4}] ^ ^1.5 ^4 particle minecraft:basic_crit_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^5 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥5
+
+execute @a[tag=射击] ^ ^0.5 ^5 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=1}] ^ ^1.5 ^5 particle minecraft:balloon_gas_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^5 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^5 particle minecraft:basic_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=4}] ^ ^1.5 ^5 particle minecraft:basic_crit_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^6 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥6
+
+execute @a[tag=射击] ^ ^0.5 ^6 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=1}] ^ ^1.5 ^6 particle minecraft:balloon_gas_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^6 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^6 particle minecraft:basic_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=4}] ^ ^1.5 ^6 particle minecraft:basic_crit_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^7 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥7
+
+execute @a[tag=射击] ^ ^0.5 ^7 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=1}] ^ ^1.5 ^7 particle minecraft:balloon_gas_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^7 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^7 particle minecraft:basic_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=4}] ^ ^1.5 ^7 particle minecraft:basic_crit_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^0.5 ^8 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+tag @a[scores={qx种类=1}] remove 射击
+
+
+
+[子弹射程]♥8
+
+execute @a[tag=射击] ^ ^0.5 ^8 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^8 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^8 particle minecraft:basic_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=4}] ^ ^1.5 ^8 particle minecraft:basic_crit_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^9 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥9
+
+execute @a[tag=射击] ^ ^0.5 ^9 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^9 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^9 particle minecraft:basic_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=4}] ^ ^1.5 ^9 particle minecraft:basic_crit_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^10 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥10
+
+execute @a[tag=射击] ^ ^0.5 ^10 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^10 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^10 particle minecraft:basic_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=4}] ^ ^1.5 ^10 particle minecraft:basic_crit_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^11 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥11
+
+execute @a[tag=射击] ^ ^0.5 ^11 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^11 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^11 particle minecraft:basic_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=4}] ^ ^1.5 ^11 particle minecraft:basic_crit_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^12 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥12
+
+execute @a[tag=射击] ^ ^0.5 ^12 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^12 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^12 particle minecraft:basic_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=4}] ^ ^1.5 ^12 particle minecraft:basic_crit_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^13 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥13
+
+execute @a[tag=射击] ^ ^0.5 ^13 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^13 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^13 particle minecraft:basic_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=4}] ^ ^1.5 ^13 particle minecraft:basic_crit_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^14 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥14
+
+execute @a[tag=射击] ^ ^0.5 ^14 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^14 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^14 particle minecraft:basic_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=4}] ^ ^1.5 ^14 particle minecraft:basic_crit_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^15 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+tag @a[scores={qx种类=4}] remove 射击
+
+
+
+[子弹射程]♥15
+
+execute @a[tag=射击] ^ ^0.5 ^15 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^15 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^15 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^16 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥16
+
+execute @a[tag=射击] ^ ^0.5 ^16 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^16 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^16 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^17 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥17
+
+execute @a[tag=射击] ^ ^0.5 ^17 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^17 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^17 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^18 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥18
+
+execute @a[tag=射击] ^ ^0.5 ^18 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^18 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^18 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^19 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥19
+
+execute @a[tag=射击] ^ ^0.5 ^19 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^19 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^19 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^20 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥20
+
+execute @a[tag=射击] ^ ^0.5 ^20 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^20 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^20 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^21 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥21
+
+execute @a[tag=射击] ^ ^0.5 ^21 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^21 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^21 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^22 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥22
+
+execute @a[tag=射击] ^ ^0.5 ^22 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^22 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^22 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^23 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥23
+
+execute @a[tag=射击] ^ ^0.5 ^23 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^23 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^23 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^24 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥24
+
+execute @a[tag=射击] ^ ^0.5 ^24 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^24 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^24 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^25 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥25
+
+execute @a[tag=射击] ^ ^0.5 ^25 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=2}] ^ ^1.5 ^25 particle minecraft:blue_flame_particle ~~~
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^25 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^26 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+tag @a[scores={qx种类=2}] remove 射击
+
+
+
+[子弹射程]♥26
+
+execute @a[tag=射击] ^ ^0.5 ^26 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^26 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^27 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥27
+
+execute @a[tag=射击] ^ ^0.5 ^27 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^27 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^28 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥28
+
+execute @a[tag=射击] ^ ^0.5 ^28 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^28 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^29 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥29
+
+execute @a[tag=射击] ^ ^0.5 ^29 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^29 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^30 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥30
+
+execute @a[tag=射击] ^ ^0.5 ^30 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^30 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^31 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥31
+
+execute @a[tag=射击] ^ ^0.5 ^31 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^31 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^32 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥32
+
+execute @a[tag=射击] ^ ^0.5 ^32 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^32 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^33 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥33
+
+execute @a[tag=射击] ^ ^0.5 ^33 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^33 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^34 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥34
+
+execute @a[tag=射击] ^ ^0.5 ^34 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^34 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^35 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥35
+
+execute @a[tag=射击] ^ ^0.5 ^35 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^35 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^35 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥36
+
+execute @a[tag=射击] ^ ^0.5 ^36 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^36 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^37 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥37
+
+execute @a[tag=射击] ^ ^0.5 ^37 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^37 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^38 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥38
+
+execute @a[tag=射击] ^ ^0.5 ^38 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^38 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^39 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥39
+
+execute @a[tag=射击] ^ ^0.5 ^39 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^39 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^40 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥40
+
+execute @a[tag=射击] ^ ^0.5 ^40 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^40 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^41 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥41
+
+execute @a[tag=射击] ^ ^0.5 ^41 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^41 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^42 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥42
+
+execute @a[tag=射击] ^ ^0.5 ^42 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^42 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^43 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥43
+
+execute @a[tag=射击] ^ ^0.5 ^43 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^43 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^44 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥44
+
+execute @a[tag=射击] ^ ^0.5 ^44 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^44 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^45detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥45
+
+execute @a[tag=射击] ^ ^0.5 ^45 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^45 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^46 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥46
+
+execute @a[tag=射击] ^ ^0.5 ^46 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^46 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^47 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥47
+
+execute @a[tag=射击] ^ ^0.5 ^47 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^47 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^48 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥48
+
+execute @a[tag=射击] ^ ^0.5 ^48 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^48 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^49 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥49
+
+execute @a[tag=射击] ^ ^0.5 ^49 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^49 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+execute @a[tag=射击] ^ ^1 ^50 detect ~ ~1 ~ air 0 tag @s add 墙
+
+
+
+tag @a[tag=射击,tag=!墙] remove 射击
+
+
+
+[子弹射程]♥50
+
+execute @a[tag=射击] ^ ^0.5 ^50 scoreboard players operation @e[r=1,c=1,tag=!射击a] 伤害a=@s 伤害
+
+
+
+execute @a[tag=射击,scores={qx种类=3}] ^ ^1.5 ^50 particle minecraft:basic_flame_particle ~~~
+
+
+
+tag @a[tag=射击] remove 墙
+
+
+
+[部位]♥
+
+scoreboard players random @e[scores={伤害a=1..}] 状态a 1 100
+
+
+
+scoreboard players set @e[scores={状态a=1..8}] 状态 1
+
+
+
+scoreboard players set @e[scores={状态a=9..57}] 状态 2
+
+
+
+scoreboard players set @e[scores={状态a=58..100}] 状态 3
+
+
+
+scoreboard players remove @e[scores={状态=1}] 头部 3
+
+
+
+scoreboard players remove @e[scores={状态=2}] 身躯 3
+
+
+
+scoreboard players remove @e[scores={状态=3}] 腿部 3
+
+
+
+[扣除血量]♥
+
+execute @e[scores={伤害a=120..},type=!item,type=!minecraft:fishing_hook] ~~~ damage @s 120 projectile entity @p[tag=射击a]
+
+
+
+execute @e[scores={伤害a=120..}] ~~~ scoreboard players remove @s 伤害a 120
+
+
+
+execute @e[scores={伤害a=60..},type=!item,type=!minecraft:fishing_hook] ~~~ damage @s 60 projectile entity @p[tag=射击a]
+
+
+
+execute @e[scores={伤害a=60..}] ~~~ scoreboard players remove @s 伤害a 60
+
+
+
+execute @e[scores={伤害a=30..},type=!item,type=!minecraft:fishing_hook] ~~~ damage @s 30 projectile entity @p[tag=射击a]
+
+
+
+execute @e[scores={伤害a=30..}] ~~~ scoreboard players remove @s 伤害a 30
+
+
+
+execute @e[scores={伤害a=16..},type=!item,type=!minecraft:fishing_hook] ~~~ damage @s 16 projectile entity @p[tag=射击a]
+
+
+
+execute @e[scores={伤害a=16..}] ~~~ scoreboard players remove @s 伤害a 16
+
+
+
+execute @e[scores={伤害a=8..},type=!item,type=!minecraft:fishing_hook] ~~~ damage @s 8 projectile entity @p[tag=射击a]
+
+
+
+execute @e[scores={伤害a=8..}] ~~~ scoreboard players remove @s 伤害a 8
+
+
+
+execute @e[scores={伤害a=4..},type=!item,type=!minecraft:fishing_hook] ~~~ damage @s 4 projectile entity @p[tag=射击a]
+
+
+
+execute @e[scores={伤害a=4..}] ~~~ scoreboard players remove @s 伤害a 4
+
+
+
+execute @e[scores={伤害a=2..},type=!item,type=!minecraft:fishing_hook] ~~~ damage @s 2 projectile entity @p[tag=射击a]
+
+
+
+execute @e[scores={伤害a=2..}] ~~~ scoreboard players remove @s 伤害a 2
+
+
+
+execute @e[scores={伤害a=1..},type=!item,type=!minecraft:fishing_hook] ~~~ damage @s 1 projectile entity @p[tag=射击a]
+
+
+
+execute @e[scores={伤害a=1..}] ~~~ scoreboard players remove @s 伤害a 1
+
+
+
+[跟换弹夹]♥
+
+scoreboard players set @a[scores={换弹=0,qx种类=1,弹夹a=!12..},hasitem={item=netherite_ingot,quantity=1..,location=slot.weapon.mainhand}] 换弹 101
+
+
+
+scoreboard players set @a[scores={换弹=0,qx种类=2,弹夹b=!26..},hasitem={item=netherite_ingot,quantity=1..,location=slot.weapon.mainhand}] 换弹 101
+
+
+
+scoreboard players set @a[scores={换弹=0,qx种类=3,弹夹c=!7..},hasitem={item=netherite_ingot,quantity=1..,location=slot.weapon.mainhand}] 换弹 101
+
+
+
+scoreboard players set @a[scores={换弹=0,qx种类=4,弹夹d=!38..},hasitem={item=netherite_ingot,quantity=1..,location=slot.weapon.mainhand}] 换弹 101
+
+
+
+scoreboard players remove @a[scores={换弹=1..},hasitem={item=netherite_ingot,quantity=1..,location=slot.weapon.mainhand}] 换弹 1
+
+
+
+scoreboard players set @a[scores={换弹=2,qx种类=1},hasitem={item=netherite_ingot,quantity=1..,location=slot.weapon.mainhand}] 弹夹a 12
+
+
+
+scoreboard players set @a[scores={换弹=2,qx种类=2},hasitem={item=netherite_ingot,quantity=1..,location=slot.weapon.mainhand}] 弹夹b 26
+
+
+
+scoreboard players set @a[scores={换弹=2,qx种类=3},hasitem={item=netherite_ingot,quantity=1..,location=slot.weapon.mainhand}] 弹夹c 7
+
+
+
+scoreboard players set @a[scores={换弹=2,qx种类=4},hasitem={item=netherite_ingot,quantity=1..,location=slot.weapon.mainhand}] 弹夹d 38
+
+
+
+scoreboard players remove @a[scores={换弹=1..},hasitem={item=netherite_ingot,quantity=1..,location=slot.weapon.mainhand}] 换弹 1
+
+
+
+clear @a[scores={换弹=1},hasitem={item=netherite_ingot,quantity=1..,location=slot.weapon.mainhand}] netherite_ingot 0 1
+
+
+
+scoreboard players set @a[scores={换弹=1}] 换弹 0
+
+
+
+[狙击枪开镜设置]♥
+
+tag @a[scores={qx种类=3},rxm=88] add 开镜
+
+
+
+tag @a[rx=-88] remove 开镜
+
+
+
+effect @a[tag=开镜] slowness 1 6 true
+
+
+
+[T显]♥
+
+execute @a[tag=T显] ~~~ titleraw @s actionbar {"rawtext":[{"text":"§l§o§a   ▎§b––––––––––––––§e状态栏§b––––––––––––––§a▎§r"},{"translate":"%%7%%8","with":{"rawtext":[{"selector":"@s[scores={qx种类=..1}]"},{"selector":"@s[scores={qx种类=..1}]"},{"selector":"@s[scores={qx种类=..2}]"},{"selector":"@s[scores={qx种类=..2}]"},{"selector":"@s[scores={qx种类=..3}]"},{"selector":"@s[scores={qx种类=..3}]"},{"text":"\n§l§o      §a┳═       §e[§r"},{"text":"§l§o§d手  枪§r"},{"text":"\n§l§o     §a︻┳═─-    §e[§r"},{"text":"§l§o§d步  枪§r"},{"text":"\n§l§o   §a▄︻┻┳══一一§e[§r"},{"text":"§l§o§d狙  枪§r"},{"text":"\n§l§o   §a▛⊏▜◤▔▔  §e[§r"},{"text":"§l§o§d冲锋枪§r"}]}},{"text":"§l§o§e] §b弹夹§r:"},{"score":{"name":"@s","objective":"弹夹"}},{"text":"§l§o§c伤害§r:"},{"score":{"name":"@s","objective":"伤害"}},{"text":"\n     §7§f"},{"translate":"%%2","with":{"rawtext":[{"selector":"@s[scores={状态=1}]"},{"text":"§c"}]}},{"text":"§l▇"},{"text":"§l          §b[§f头部§b] "},{"translate":"%%6","with":{"rawtext":[{"selector":"@s[scores={头部=90..}]"},{"selector":"@s[scores={头部=70..}]"},{"selector":"@s[scores={头部=50..}]"},{"selector":"@s[scores={头部=30..}]"},{"selector":"@s[scores={头部=10..}]"},{"text":"§l§o§a▅▅▅▅▅§r"},{"text":"§l§o§a▅▅▅▅§f▅§r"},{"text":"§l§o§e▅▅▅§f▅▅§r"},{"text":"§l§o§c▅▅§f▅▅▅§r"},{"text":"§l§o§c▅§f▅▅▅▅§r"},{"text":"§l§o§0▅▅▅▅▅§r"}]}},{"translate":"%%2","with":{"rawtext":[{"selector":"@s[scores={状态=2}]"},{"text":"§c"}]}},{"text":"\n    ▌▉▌"},{"text":"§l         §b[§f身躯§b] "},{"translate":"%%6","with":{"rawtext":[{"selector":"@s[scores={身躯=90..}]"},{"selector":"@s[scores={身躯=70..}]"},{"selector":"@s[scores={身躯=50..}]"},{"selector":"@s[scores={身躯=30..}]"},{"selector":"@s[scores={身躯=10..}]"},{"text":"§l§o§a▅▅▅▅▅§r"},{"text":"§l§o§a▅▅▅▅§f▅§r"},{"text":"§l§o§e▅▅▅§f▅▅§r"},{"text":"§l§o§c▅▅§f▅▅▅§r"},{"text":"§l§o§c▅§f▅▅▅▅§r"},{"text":"§l§o§0▅▅▅▅▅§r"}]}},{"translate":"%%2","with":{"rawtext":[{"selector":"@s[scores={状态=3}]"},{"text":"§c"}]}},{"text":"\n     ▌▌"},{"text":"§l          §b[§f腿部§b] "},{"translate":"%%6","with":{"rawtext":[{"selector":"@s[scores={腿部=90..}]"},{"selector":"@s[scores={腿部=70..}]"},{"selector":"@s[scores={腿部=50..}]"},{"selector":"@s[scores={腿部=30..}]"},{"selector":"@s[scores={腿部=10..}]"},{"text":"§l§o§a▅▅▅▅▅§r"},{"text":"§l§o§a▅▅▅▅§f▅§r"},{"text":"§l§o§e▅▅▅§f▅▅§r"},{"text":"§l§o§c▅▅§f▅▅▅§r"},{"text":"§l§o§c▅§f▅▅▅▅§r"},{"text":"§l§o§0▅▅▅▅▅§r"}]}},{"text":"\n                  §l§b.[§f换弹§b] "},{"translate":"%%7","with":{"rawtext":[{"selector":"@s[scores={换弹=..90}]"},{"selector":"@s[scores={换弹=..70}]"},{"selector":"@s[scores={换弹=..50}]"},{"selector":"@s[scores={换弹=..30}]"},{"selector":"@s[scores={换弹=..10}]"},{"selector":"@s[scores={换弹=0}]"},{"text":"§l§o§f▅▅▅▅▅§r"},{"text":"§l§o§d▅▅▅▅▅§r"},{"text":"§l§o§d▅▅▅▅§f▅§r"},{"text":"§l§o§d▅▅▅§f▅▅§r"},{"text":"§l§o§d▅▅§f▅▅▅§r"},{"text":"§l§o§d▅§f▅▅▅▅§r"},{"text":"§l§o§f▅▅▅▅▅§r"}]}}]}
+
+
+
+[结尾]♥
+
+replaceitem entity @a slot.hotbar 8 fishing_rod 1 0 {"item_lock":{"mode":"lock_in_slot"}}
+
+
+
+replaceitem entity @a slot.hotbar 7 egg 16 0 {"item_lock":{"mode":"lock_in_slot"}}
+
+
+
+tag @a add 死亡
+
+
+
+tag @e[type=player] remove 死亡
+
+
+
+tag @a[tag=死亡] add 死亡a
+
+
+
+effect @e[type=player,tag=死亡a] health_boost 99999999 9 true
+
+
+
+effect @e[type=player,tag=死亡a] instant_health 1 55 true
+
+
+
+scoreboard players set @e[type=player,tag=死亡a] 头部 100
+
+
+
+scoreboard players set @e[type=player,tag=死亡a] 身躯 100
+
+
+
+scoreboard players set @e[type=player,tag=死亡a] 腿部 100
+
+
+
+tag @e[type=player] remove 死亡a
+
+
+
+tag @a[tag=墙] remove 墙
+
+
+
+tag @a[tag=射击] remove 射击
+
+
+
+tag @a[tag=射击a] remove 射击a
+
+
+
+tag @a[tag=!射击a,scores={自动=2,射速=0}] add 射击a
+
+
+
+tag @a[tag=!射击,scores={自动=2,射速=0}] add 射击
+
+
+
+tag @a[tag=!墙,scores={自动=2}] add 墙
+
+
+
+scoreboard players set @e[scores={状态a=1..}] 状态a 0
+
+
+
+scoreboard players set @e[scores={状态=1..}] 状态 0
+
+
+
+effect @a[scores={头部=..49}] blindness 20 0 true
+
+
+
+effect @a[scores={身躯=..49}] fatal_poison 1 0 true
+
+
+
+effect @a[scores={头部=..10}] blindness 1 20 true
+
+
+
+effect @a[scores={身躯=..10}] fatal_poison 1 20 true
+
+
+
+effect @a[scores={腿部=..49}] slowness 1 0 true
+
+
+
+effect @a[scores={腿部=..10}] slowness 1 6 true
+
+
+
+kill @a[scores={头部=..1}]
+
+
+
+kill @a[scores={身躯=..1}]
+
+
+
+kill @a[scores={腿部=..1}]
+
+
+
+kill @e[type=minecraft:fishing_hook]
+
+
+
+[枪械切换]♥
+
+execute @e[type=egg] ~~~ scoreboard players add @p[r=2] qx种类 1
+
+
+
+execute @e[type=egg] ~~~ scoreboard players add @p[r=2,scores={qx种类=3}] 自动 0
+
+
+
+scoreboard players set @a[scores={qx种类=5..}] qx种类 1
+
+
+
+execute @e[type=egg] ~~~ playsound block.end_portal_frame.fill @p[r=3] ~ ~ ~
+
+
+
+execute @e[type=egg] ~~~ title @p[r=2,scores={qx种类=1}] actionbar §l§o§d◤§a手枪§d◢   §e 沙漠之鹰
+
+§l§b射程§r:§c▊▊▊§f▊▊▊▊▊▊▊
+
+§l§b射速§r:§c▊▊§f▊▊▊▊▊▊▊▊
+
+§l§b弹夹§r:§c▊▊§f▊▊▊▊▊▊▊▊
+
+
+
+execute @e[type=egg] ~~~ title @p[r=2,scores={qx种类=2}] actionbar §l§o§d◤§a步枪§d◢   §e M416步枪
+
+§l§b射程§r:§c▊▊▊▊▊▊§f▊▊▊▊
+
+§l§b射速§r:§c▊▊▊▊▊▊▊§f▊▊▊
+
+§l§b弹夹§r:§c▊▊▊▊§f▊▊▊▊▊▊
+
+
+
+execute @e[type=egg] ~~~ title @p[r=2,scores={qx种类=3}] actionbar §l§o§d◤§a狙枪§d◢   §e Kar98k狙击枪
+
+§l§b射程§r:§c▊▊▊▊▊▊▊▊▊▊
+
+§l§b射速§r:§c▊§f▊▊▊▊▊▊▊▊▊
+
+§l§b弹夹§r:§c▊§f▊▊▊▊▊▊▊▊▊
+
+
+
+execute @e[type=egg] ~~~ title @p[r=2,scores={qx种类=4}] actionbar §l§o§d◤§a冲锋枪§d◢   §e MP5K冲锋枪
+
+§l§b射程§r:§c▊▊▊▊§f▊▊▊▊▊▊
+
+§l§b射速§r:§c▊▊▊▊▊▊▊▊§f▊▊
+
+§l§b弹夹§r:§c▊▊▊▊▊▊▊§f▊▊▊
+
+
+
+kill @e[type=egg]
+
+
+
+execute @a[scores={换弹=2},hasitem={item=netherite_ingot,quantity=1..,location=slot.weapon.mainhand}] ~~~ playsound armor.equip_gold @a[r=10] ~ ~ ~
+
+
+
+tag @a remove T显
+
+
+
+tag @a[hasitem={item=netherite_ingot,quantity=1..,location=slot.weapon.mainhand}] add T显
+
+
+
+tag @a[hasitem={item=fishing_rod,location=slot.weapon.mainhand}] add T显
+
+
+
+–––––––––––划分线–––––––––
+
+[每2秒回复身体状态，第一个循环，延迟40，后面均为连锁，无条件0延迟]♥
+
+scoreboard players add @a[scores={头部=..99}] 头部 1
+
+
+
+scoreboard players add @a[scores={身躯=..99}] 身躯 1
+
+
+
+scoreboard players add @a[scores={腿部=..99}] 腿部 1
+
+
