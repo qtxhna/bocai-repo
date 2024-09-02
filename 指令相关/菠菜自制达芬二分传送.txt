@@ -1,0 +1,1581 @@
+scoreboard objectives add 传送目的地 dummy
+scoreboard objectives add 存储目的地 dummy
+scoreboard objectives add 当前x dummy
+scoreboard objectives add 当前y dummy
+scoreboard objectives add 当前z dummy
+scoreboard objectives add 存储x1 dummy
+scoreboard objectives add 存储y1 dummy
+scoreboard objectives add 存储z1 dummy
+scoreboard objectives add 存储x2 dummy
+scoreboard objectives add 存储y2 dummy
+scoreboard objectives add 存储z2 dummy
+scoreboard objectives add 存储x3 dummy
+scoreboard objectives add 存储y3 dummy
+scoreboard objectives add 存储z3 dummy
+scoreboard objectives add 存储x4 dummy
+scoreboard objectives add 存储y4 dummy
+scoreboard objectives add 存储z4 dummy
+scoreboard objectives add 存储x5 dummy
+scoreboard objectives add 存储y5 dummy
+scoreboard objectives add 存储z5 dummy
+
+testfor @a[scores={传送目的地=1]
+cp
+scoreboard players set @n 存储x1 -1048576
+scoreboard players set @n 存储y1 384
+scoreboard players set @n 存储z1 -1048576
+summon armor_stand -1048576 384 -1048576 定位
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1048576,dy=-512,dz=2097152,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储x1 1048576
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1048576,dy=-512,dz=2097152,scores={存储目的地=1}] run tp ~1048576~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=524288,dy=-512,dz=2097152,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储x1 524288
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=524288,dy=-512,dz=2097152,scores={存储目的地=1}] run tp ~524288~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=262144,dy=-512,dz=2097152,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储x1 262144
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=262144,dy=-512,dz=2097152,scores={存储目的地=1}] run tp ~262144~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=131072,dy=-512,dz=2097152,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储x1 131072
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=131072,dy=-512,dz=2097152,scores={存储目的地=1}] run tp ~131072~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=65536,dy=-512,dz=2097152,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储x1 65536
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=65536,dy=-512,dz=2097152,scores={存储目的地=1}] run tp ~65536~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=32768,dy=-512,dz=2097152,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储x1 32768
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=32768,dy=-512,dz=2097152,scores={存储目的地=1}] run tp ~32768~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=16384,dy=-512,dz=2097152,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储x1 16384
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=16384,dy=-512,dz=2097152,scores={存储目的地=1}] run tp ~16384~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=8192,dy=-512,dz=2097152,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储x1 8192
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=8192,dy=-512,dz=2097152,scores={存储目的地=1}] run tp ~8192~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=4096,dy=-512,dz=2097152,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储x1 4096
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=4096,dy=-512,dz=2097152,scores={存储目的地=1}] run tp ~4096~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=2048,dy=-512,dz=2097152,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储x1 2048
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=2048,dy=-512,dz=2097152,scores={存储目的地=1}] run tp ~2048~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1024,dy=-512,dz=2097152,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储x1 1024
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1024,dy=-512,dz=2097152,scores={存储目的地=1}] run tp ~1024~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=512,dy=-512,dz=2097152,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储x1 512
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=512,dy=-512,dz=2097152,scores={存储目的地=1}] run tp ~512~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=256,dy=-512,dz=2097152,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储x1 256
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=256,dy=-512,dz=2097152,scores={存储目的地=1}] run tp ~256~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=128,dy=-512,dz=2097152,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储x1 128
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=128,dy=-512,dz=2097152,scores={存储目的地=1}] run tp ~128~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=64,dy=-512,dz=2097152,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储x1 64
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=64,dy=-512,dz=2097152,scores={存储目的地=1}] run tp ~64~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=32,dy=-512,dz=2097152,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储x1 32
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=32,dy=-512,dz=2097152,scores={存储目的地=1}] run tp ~32~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=16,dy=-512,dz=2097152,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储x1 16
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=16,dy=-512,dz=2097152,scores={存储目的地=1}] run tp ~16~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=8,dy=-512,dz=2097152,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储x1 8
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=8,dy=-512,dz=2097152,scores={存储目的地=1}] run tp ~8~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=4,dy=-512,dz=2097152,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储x1 4
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=4,dy=-512,dz=2097152,scores={存储目的地=1}] run tp ~4~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=2,dy=-512,dz=2097152,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储x1 2
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=2,dy=-512,dz=2097152,scores={存储目的地=1}] run tp ~2~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2097152,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储x1 1
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2097152,scores={存储目的地=1}] run tp ~1~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1048576,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储z1 1048576
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1048576,scores={存储目的地=1}] run tp ~~~1048576
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=524288,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储z1 524288
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=524288,scores={存储目的地=1}] run tp ~~~524288
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=262144,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储z1 262144
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=262144,scores={存储目的地=1}] run tp ~~~262144
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=131072,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储z1 131072
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=131072,scores={存储目的地=1}] run tp ~~~131072
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=65536,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储z1 65536
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=65536,scores={存储目的地=1}] run tp ~~~65536
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=32768,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储z1 32768
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=32768,scores={存储目的地=1}] run tp ~~~32768
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=16384,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储z1 16384
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=16384,scores={存储目的地=1}] run tp ~~~16384
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=8192,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储z1 8192
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=8192,scores={存储目的地=1}] run tp ~~~8192
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=4096,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储z1 4096
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=4096,scores={存储目的地=1}] run tp ~~~4096
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2048,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储z1 2048
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2048,scores={存储目的地=1}] run tp ~~~2048
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1024,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储z1 1024
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1024,scores={存储目的地=1}] run tp ~~~1024
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=512,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储z1 512
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=512,scores={存储目的地=1}] run tp ~~~512
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=256,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储z1 256
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=256,scores={存储目的地=1}] run tp ~~~256
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=128,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储z1 128
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=128,scores={存储目的地=1}] run tp ~~~128
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=64,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储z1 64
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=64,scores={存储目的地=1}] run tp ~~~64
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=32,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储z1 32
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=32,scores={存储目的地=1}] run tp ~~~32
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=16,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储z1 16
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=16,scores={存储目的地=1}] run tp ~~~16
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=8,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储z1 8
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=8,scores={存储目的地=1}] run tp ~~~8
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=4,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储z1 4
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=4,scores={存储目的地=1}] run tp ~~~4
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储z1 2
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2,scores={存储目的地=1}] run tp ~~~2
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储z1 1
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1,scores={存储目的地=1}] run tp ~~~1
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-256,dz=1,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储y1 -256
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-256,dz=1,scores={存储目的地=1}] run tp ~~-256~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-128,dz=1,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储y1 -128
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-128,dz=1,scores={存储目的地=1}] run tp ~~-128~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-64,dz=1,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储y1 -64
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-64,dz=1,scores={存储目的地=1}] run tp ~~-64~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-32,dz=1,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储y1 -32
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-32,dz=1,scores={存储目的地=1}] run tp ~~-32~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-16,dz=1,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储y1 -16
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-16,dz=1,scores={存储目的地=1}] run tp ~~-16~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-8,dz=1,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储y1 -8
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-8,dz=1,scores={存储目的地=1}] run tp ~~-8~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-4,dz=1,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储y1 -4
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-4,dz=1,scores={存储目的地=1}] run tp ~~-4~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-2,dz=1,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储y1 -2
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-2,dz=1,scores={存储目的地=1}] run tp ~~-2~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-1,dz=1,scores={存储目的地=1}] run scoreboard players add @a[scores={存储目的地=1}] 存储y1 -1
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-1,dz=1,scores={存储目的地=1}] run tp ~~-1~
+
+testfor @a[scores={传送目的地=2]
+cp
+scoreboard players set @n 存储x2 -1048576
+scoreboard players set @n 存储y2 384
+scoreboard players set @n 存储z2 -1048576
+summon armor_stand -1048576 384 -1048576 定位
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1048576,dy=-512,dz=2097152,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储x2 1048576
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1048576,dy=-512,dz=2097152,scores={存储目的地=2}] run tp ~1048576~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=524288,dy=-512,dz=2097152,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储x2 524288
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=524288,dy=-512,dz=2097152,scores={存储目的地=2}] run tp ~524288~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=262144,dy=-512,dz=2097152,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储x2 262144
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=262144,dy=-512,dz=2097152,scores={存储目的地=2}] run tp ~262144~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=131072,dy=-512,dz=2097152,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储x2 131072
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=131072,dy=-512,dz=2097152,scores={存储目的地=2}] run tp ~131072~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=65536,dy=-512,dz=2097152,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储x2 65536
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=65536,dy=-512,dz=2097152,scores={存储目的地=2}] run tp ~65536~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=32768,dy=-512,dz=2097152,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储x2 32768
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=32768,dy=-512,dz=2097152,scores={存储目的地=2}] run tp ~32768~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=16384,dy=-512,dz=2097152,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储x2 16384
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=16384,dy=-512,dz=2097152,scores={存储目的地=2}] run tp ~16384~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=8192,dy=-512,dz=2097152,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储x2 8192
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=8192,dy=-512,dz=2097152,scores={存储目的地=2}] run tp ~8192~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=4096,dy=-512,dz=2097152,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储x2 4096
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=4096,dy=-512,dz=2097152,scores={存储目的地=2}] run tp ~4096~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=2048,dy=-512,dz=2097152,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储x2 2048
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=2048,dy=-512,dz=2097152,scores={存储目的地=2}] run tp ~2048~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1024,dy=-512,dz=2097152,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储x2 1024
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1024,dy=-512,dz=2097152,scores={存储目的地=2}] run tp ~1024~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=512,dy=-512,dz=2097152,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储x2 512
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=512,dy=-512,dz=2097152,scores={存储目的地=2}] run tp ~512~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=256,dy=-512,dz=2097152,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储x2 256
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=256,dy=-512,dz=2097152,scores={存储目的地=2}] run tp ~256~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=128,dy=-512,dz=2097152,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储x2 128
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=128,dy=-512,dz=2097152,scores={存储目的地=2}] run tp ~128~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=64,dy=-512,dz=2097152,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储x2 64
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=64,dy=-512,dz=2097152,scores={存储目的地=2}] run tp ~64~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=32,dy=-512,dz=2097152,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储x2 32
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=32,dy=-512,dz=2097152,scores={存储目的地=2}] run tp ~32~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=16,dy=-512,dz=2097152,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储x2 16
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=16,dy=-512,dz=2097152,scores={存储目的地=2}] run tp ~16~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=8,dy=-512,dz=2097152,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储x2 8
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=8,dy=-512,dz=2097152,scores={存储目的地=2}] run tp ~8~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=4,dy=-512,dz=2097152,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储x2 4
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=4,dy=-512,dz=2097152,scores={存储目的地=2}] run tp ~4~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=2,dy=-512,dz=2097152,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储x2 2
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=2,dy=-512,dz=2097152,scores={存储目的地=2}] run tp ~2~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2097152,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储x2 1
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2097152,scores={存储目的地=2}] run tp ~1~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1048576,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储z2 1048576
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1048576,scores={存储目的地=2}] run tp ~~~1048576
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=524288,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储z2 524288
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=524288,scores={存储目的地=2}] run tp ~~~524288
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=262144,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储z2 262144
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=262144,scores={存储目的地=2}] run tp ~~~262144
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=131072,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储z2 131072
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=131072,scores={存储目的地=2}] run tp ~~~131072
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=65536,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储z2 65536
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=65536,scores={存储目的地=2}] run tp ~~~65536
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=32768,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储z2 32768
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=32768,scores={存储目的地=2}] run tp ~~~32768
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=16384,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储z2 16384
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=16384,scores={存储目的地=2}] run tp ~~~16384
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=8192,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储z2 8192
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=8192,scores={存储目的地=2}] run tp ~~~8192
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=4096,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储z2 4096
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=4096,scores={存储目的地=2}] run tp ~~~4096
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2048,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储z2 2048
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2048,scores={存储目的地=2}] run tp ~~~2048
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1024,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储z2 1024
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1024,scores={存储目的地=2}] run tp ~~~1024
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=512,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储z2 512
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=512,scores={存储目的地=2}] run tp ~~~512
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=256,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储z2 256
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=256,scores={存储目的地=2}] run tp ~~~256
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=128,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储z2 128
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=128,scores={存储目的地=2}] run tp ~~~128
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=64,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储z2 64
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=64,scores={存储目的地=2}] run tp ~~~64
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=32,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储z2 32
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=32,scores={存储目的地=2}] run tp ~~~32
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=16,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储z2 16
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=16,scores={存储目的地=2}] run tp ~~~16
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=8,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储z2 8
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=8,scores={存储目的地=2}] run tp ~~~8
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=4,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储z2 4
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=4,scores={存储目的地=2}] run tp ~~~4
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储z2 2
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2,scores={存储目的地=2}] run tp ~~~2
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储z2 1
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1,scores={存储目的地=2}] run tp ~~~1
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-256,dz=1,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储y2 -256
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-256,dz=1,scores={存储目的地=2}] run tp ~~-256~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-128,dz=1,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储y2 -128
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-128,dz=1,scores={存储目的地=2}] run tp ~~-128~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-64,dz=1,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储y2 -64
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-64,dz=1,scores={存储目的地=2}] run tp ~~-64~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-32,dz=1,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储y2 -32
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-32,dz=1,scores={存储目的地=2}] run tp ~~-32~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-16,dz=1,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储y2 -16
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-16,dz=1,scores={存储目的地=2}] run tp ~~-16~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-8,dz=1,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储y2 -8
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-8,dz=1,scores={存储目的地=2}] run tp ~~-8~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-4,dz=1,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储y2 -4
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-4,dz=1,scores={存储目的地=2}] run tp ~~-4~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-2,dz=1,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储y2 -2
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-2,dz=1,scores={存储目的地=2}] run tp ~~-2~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-1,dz=1,scores={存储目的地=2}] run scoreboard players add @a[scores={存储目的地=2}] 存储y2 -1
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-1,dz=1,scores={存储目的地=2}] run tp ~~-1~
+
+testfor @a[scores={传送目的地=3]
+cp
+scoreboard players set @n 存储x3 -1048576
+scoreboard players set @n 存储y3 384
+scoreboard players set @n 存储z3 -1048576
+summon armor_stand -1048576 384 -1048576 定位
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1048576,dy=-512,dz=2097152,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储x3 1048576
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1048576,dy=-512,dz=2097152,scores={存储目的地=3}] run tp ~1048576~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=524288,dy=-512,dz=2097152,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储x3 524288
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=524288,dy=-512,dz=2097152,scores={存储目的地=3}] run tp ~524288~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=262144,dy=-512,dz=2097152,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储x3 262144
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=262144,dy=-512,dz=2097152,scores={存储目的地=3}] run tp ~262144~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=131072,dy=-512,dz=2097152,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储x3 131072
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=131072,dy=-512,dz=2097152,scores={存储目的地=3}] run tp ~131072~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=65536,dy=-512,dz=2097152,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储x3 65536
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=65536,dy=-512,dz=2097152,scores={存储目的地=3}] run tp ~65536~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=32768,dy=-512,dz=2097152,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储x3 32768
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=32768,dy=-512,dz=2097152,scores={存储目的地=3}] run tp ~32768~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=16384,dy=-512,dz=2097152,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储x3 16384
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=16384,dy=-512,dz=2097152,scores={存储目的地=3}] run tp ~16384~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=8192,dy=-512,dz=2097152,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储x3 8192
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=8192,dy=-512,dz=2097152,scores={存储目的地=3}] run tp ~8192~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=4096,dy=-512,dz=2097152,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储x3 4096
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=4096,dy=-512,dz=2097152,scores={存储目的地=3}] run tp ~4096~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=2048,dy=-512,dz=2097152,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储x3 2048
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=2048,dy=-512,dz=2097152,scores={存储目的地=3}] run tp ~2048~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1024,dy=-512,dz=2097152,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储x3 1024
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1024,dy=-512,dz=2097152,scores={存储目的地=3}] run tp ~1024~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=512,dy=-512,dz=2097152,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储x3 512
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=512,dy=-512,dz=2097152,scores={存储目的地=3}] run tp ~512~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=256,dy=-512,dz=2097152,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储x3 256
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=256,dy=-512,dz=2097152,scores={存储目的地=3}] run tp ~256~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=128,dy=-512,dz=2097152,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储x3 128
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=128,dy=-512,dz=2097152,scores={存储目的地=3}] run tp ~128~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=64,dy=-512,dz=2097152,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储x3 64
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=64,dy=-512,dz=2097152,scores={存储目的地=3}] run tp ~64~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=32,dy=-512,dz=2097152,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储x3 32
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=32,dy=-512,dz=2097152,scores={存储目的地=3}] run tp ~32~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=16,dy=-512,dz=2097152,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储x3 16
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=16,dy=-512,dz=2097152,scores={存储目的地=3}] run tp ~16~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=8,dy=-512,dz=2097152,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储x3 8
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=8,dy=-512,dz=2097152,scores={存储目的地=3}] run tp ~8~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=4,dy=-512,dz=2097152,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储x3 4
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=4,dy=-512,dz=2097152,scores={存储目的地=3}] run tp ~4~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=2,dy=-512,dz=2097152,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储x3 2
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=2,dy=-512,dz=2097152,scores={存储目的地=3}] run tp ~2~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2097152,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储x3 1
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2097152,scores={存储目的地=3}] run tp ~1~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1048576,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储z3 1048576
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1048576,scores={存储目的地=3}] run tp ~~~1048576
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=524288,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储z3 524288
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=524288,scores={存储目的地=3}] run tp ~~~524288
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=262144,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储z3 262144
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=262144,scores={存储目的地=3}] run tp ~~~262144
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=131072,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储z3 131072
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=131072,scores={存储目的地=3}] run tp ~~~131072
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=65536,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储z3 65536
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=65536,scores={存储目的地=3}] run tp ~~~65536
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=32768,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储z3 32768
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=32768,scores={存储目的地=3}] run tp ~~~32768
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=16384,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储z3 16384
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=16384,scores={存储目的地=3}] run tp ~~~16384
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=8192,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储z3 8192
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=8192,scores={存储目的地=3}] run tp ~~~8192
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=4096,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储z3 4096
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=4096,scores={存储目的地=3}] run tp ~~~4096
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2048,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储z3 2048
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2048,scores={存储目的地=3}] run tp ~~~2048
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1024,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储z3 1024
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1024,scores={存储目的地=3}] run tp ~~~1024
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=512,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储z3 512
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=512,scores={存储目的地=3}] run tp ~~~512
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=256,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储z3 256
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=256,scores={存储目的地=3}] run tp ~~~256
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=128,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储z3 128
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=128,scores={存储目的地=3}] run tp ~~~128
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=64,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储z3 64
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=64,scores={存储目的地=3}] run tp ~~~64
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=32,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储z3 32
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=32,scores={存储目的地=3}] run tp ~~~32
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=16,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储z3 16
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=16,scores={存储目的地=3}] run tp ~~~16
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=8,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储z3 8
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=8,scores={存储目的地=3}] run tp ~~~8
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=4,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储z3 4
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=4,scores={存储目的地=3}] run tp ~~~4
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储z3 2
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2,scores={存储目的地=3}] run tp ~~~2
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储z3 1
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1,scores={存储目的地=3}] run tp ~~~1
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-256,dz=1,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储y3 -256
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-256,dz=1,scores={存储目的地=3}] run tp ~~-256~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-128,dz=1,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储y3 -128
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-128,dz=1,scores={存储目的地=3}] run tp ~~-128~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-64,dz=1,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储y3 -64
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-64,dz=1,scores={存储目的地=3}] run tp ~~-64~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-32,dz=1,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储y3 -32
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-32,dz=1,scores={存储目的地=3}] run tp ~~-32~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-16,dz=1,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储y3 -16
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-16,dz=1,scores={存储目的地=3}] run tp ~~-16~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-8,dz=1,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储y3 -8
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-8,dz=1,scores={存储目的地=3}] run tp ~~-8~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-4,dz=1,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储y3 -4
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-4,dz=1,scores={存储目的地=3}] run tp ~~-4~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-2,dz=1,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储y3 -2
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-2,dz=1,scores={存储目的地=3}] run tp ~~-2~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-1,dz=1,scores={存储目的地=3}] run scoreboard players add @a[scores={存储目的地=3}] 存储y3 -1
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-1,dz=1,scores={存储目的地=3}] run tp ~~-1~
+
+testfor @a[scores={传送目的地=4]
+cp
+scoreboard players set @n 存储x4 -1048576
+scoreboard players set @n 存储y4 384
+scoreboard players set @n 存储z4 -1048576
+summon armor_stand -1048576 384 -1048576 定位
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1048576,dy=-512,dz=2097152,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储x4 1048576
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1048576,dy=-512,dz=2097152,scores={存储目的地=4}] run tp ~1048576~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=524288,dy=-512,dz=2097152,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储x4 524288
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=524288,dy=-512,dz=2097152,scores={存储目的地=4}] run tp ~524288~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=262144,dy=-512,dz=2097152,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储x4 262144
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=262144,dy=-512,dz=2097152,scores={存储目的地=4}] run tp ~262144~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=131072,dy=-512,dz=2097152,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储x4 131072
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=131072,dy=-512,dz=2097152,scores={存储目的地=4}] run tp ~131072~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=65536,dy=-512,dz=2097152,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储x4 65536
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=65536,dy=-512,dz=2097152,scores={存储目的地=4}] run tp ~65536~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=32768,dy=-512,dz=2097152,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储x4 32768
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=32768,dy=-512,dz=2097152,scores={存储目的地=4}] run tp ~32768~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=16384,dy=-512,dz=2097152,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储x4 16384
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=16384,dy=-512,dz=2097152,scores={存储目的地=4}] run tp ~16384~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=8192,dy=-512,dz=2097152,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储x4 8192
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=8192,dy=-512,dz=2097152,scores={存储目的地=4}] run tp ~8192~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=4096,dy=-512,dz=2097152,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储x4 4096
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=4096,dy=-512,dz=2097152,scores={存储目的地=4}] run tp ~4096~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=2048,dy=-512,dz=2097152,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储x4 2048
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=2048,dy=-512,dz=2097152,scores={存储目的地=4}] run tp ~2048~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1024,dy=-512,dz=2097152,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储x4 1024
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1024,dy=-512,dz=2097152,scores={存储目的地=4}] run tp ~1024~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=512,dy=-512,dz=2097152,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储x4 512
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=512,dy=-512,dz=2097152,scores={存储目的地=4}] run tp ~512~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=256,dy=-512,dz=2097152,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储x4 256
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=256,dy=-512,dz=2097152,scores={存储目的地=4}] run tp ~256~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=128,dy=-512,dz=2097152,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储x4 128
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=128,dy=-512,dz=2097152,scores={存储目的地=4}] run tp ~128~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=64,dy=-512,dz=2097152,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储x4 64
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=64,dy=-512,dz=2097152,scores={存储目的地=4}] run tp ~64~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=32,dy=-512,dz=2097152,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储x4 32
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=32,dy=-512,dz=2097152,scores={存储目的地=4}] run tp ~32~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=16,dy=-512,dz=2097152,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储x4 16
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=16,dy=-512,dz=2097152,scores={存储目的地=4}] run tp ~16~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=8,dy=-512,dz=2097152,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储x4 8
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=8,dy=-512,dz=2097152,scores={存储目的地=4}] run tp ~8~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=4,dy=-512,dz=2097152,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储x4 4
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=4,dy=-512,dz=2097152,scores={存储目的地=4}] run tp ~4~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=2,dy=-512,dz=2097152,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储x4 2
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=2,dy=-512,dz=2097152,scores={存储目的地=4}] run tp ~2~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2097152,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储x4 1
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2097152,scores={存储目的地=4}] run tp ~1~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1048576,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储z4 1048576
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1048576,scores={存储目的地=4}] run tp ~~~1048576
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=524288,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储z4 524288
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=524288,scores={存储目的地=4}] run tp ~~~524288
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=262144,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储z4 262144
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=262144,scores={存储目的地=4}] run tp ~~~262144
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=131072,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储z4 131072
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=131072,scores={存储目的地=4}] run tp ~~~131072
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=65536,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储z4 65536
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=65536,scores={存储目的地=4}] run tp ~~~65536
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=32768,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储z4 32768
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=32768,scores={存储目的地=4}] run tp ~~~32768
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=16384,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储z4 16384
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=16384,scores={存储目的地=4}] run tp ~~~16384
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=8192,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储z4 8192
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=8192,scores={存储目的地=4}] run tp ~~~8192
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=4096,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储z4 4096
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=4096,scores={存储目的地=4}] run tp ~~~4096
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2048,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储z4 2048
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2048,scores={存储目的地=4}] run tp ~~~2048
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1024,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储z4 1024
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1024,scores={存储目的地=4}] run tp ~~~1024
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=512,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储z4 512
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=512,scores={存储目的地=4}] run tp ~~~512
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=256,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储z4 256
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=256,scores={存储目的地=4}] run tp ~~~256
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=128,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储z4 128
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=128,scores={存储目的地=4}] run tp ~~~128
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=64,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储z4 64
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=64,scores={存储目的地=4}] run tp ~~~64
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=32,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储z4 32
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=32,scores={存储目的地=4}] run tp ~~~32
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=16,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储z4 16
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=16,scores={存储目的地=4}] run tp ~~~16
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=8,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储z4 8
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=8,scores={存储目的地=4}] run tp ~~~8
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=4,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储z4 4
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=4,scores={存储目的地=4}] run tp ~~~4
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储z4 2
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2,scores={存储目的地=4}] run tp ~~~2
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储z4 1
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1,scores={存储目的地=4}] run tp ~~~1
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-256,dz=1,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储y4 -256
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-256,dz=1,scores={存储目的地=4}] run tp ~~-256~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-128,dz=1,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储y4 -128
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-128,dz=1,scores={存储目的地=4}] run tp ~~-128~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-64,dz=1,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储y4 -64
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-64,dz=1,scores={存储目的地=4}] run tp ~~-64~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-32,dz=1,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储y4 -32
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-32,dz=1,scores={存储目的地=4}] run tp ~~-32~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-16,dz=1,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储y4 -16
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-16,dz=1,scores={存储目的地=4}] run tp ~~-16~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-8,dz=1,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储y4 -8
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-8,dz=1,scores={存储目的地=4}] run tp ~~-8~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-4,dz=1,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储y4 -4
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-4,dz=1,scores={存储目的地=4}] run tp ~~-4~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-2,dz=1,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储y4 -2
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-2,dz=1,scores={存储目的地=4}] run tp ~~-2~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-1,dz=1,scores={存储目的地=4}] run scoreboard players add @a[scores={存储目的地=4}] 存储y4 -1
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-1,dz=1,scores={存储目的地=4}] run tp ~~-1~
+
+testfor @a[scores={传送目的地=5]
+cp
+scoreboard players set @n 存储x5 -1048576
+scoreboard players set @n 存储y5 384
+scoreboard players set @n 存储z5 -1048576
+summon armor_stand -1048576 384 -1048576 定位
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1048576,dy=-512,dz=2097152,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储x5 1048576
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1048576,dy=-512,dz=2097152,scores={存储目的地=5}] run tp ~1048576~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=524288,dy=-512,dz=2097152,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储x5 524288
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=524288,dy=-512,dz=2097152,scores={存储目的地=5}] run tp ~524288~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=262144,dy=-512,dz=2097152,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储x5 262144
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=262144,dy=-512,dz=2097152,scores={存储目的地=5}] run tp ~262144~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=131072,dy=-512,dz=2097152,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储x5 131072
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=131072,dy=-512,dz=2097152,scores={存储目的地=5}] run tp ~131072~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=65536,dy=-512,dz=2097152,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储x5 65536
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=65536,dy=-512,dz=2097152,scores={存储目的地=5}] run tp ~65536~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=32768,dy=-512,dz=2097152,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储x5 32768
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=32768,dy=-512,dz=2097152,scores={存储目的地=5}] run tp ~32768~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=16384,dy=-512,dz=2097152,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储x5 16384
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=16384,dy=-512,dz=2097152,scores={存储目的地=5}] run tp ~16384~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=8192,dy=-512,dz=2097152,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储x5 8192
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=8192,dy=-512,dz=2097152,scores={存储目的地=5}] run tp ~8192~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=4096,dy=-512,dz=2097152,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储x5 4096
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=4096,dy=-512,dz=2097152,scores={存储目的地=5}] run tp ~4096~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=2048,dy=-512,dz=2097152,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储x5 2048
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=2048,dy=-512,dz=2097152,scores={存储目的地=5}] run tp ~2048~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1024,dy=-512,dz=2097152,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储x5 1024
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1024,dy=-512,dz=2097152,scores={存储目的地=5}] run tp ~1024~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=512,dy=-512,dz=2097152,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储x5 512
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=512,dy=-512,dz=2097152,scores={存储目的地=5}] run tp ~512~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=256,dy=-512,dz=2097152,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储x5 256
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=256,dy=-512,dz=2097152,scores={存储目的地=5}] run tp ~256~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=128,dy=-512,dz=2097152,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储x5 128
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=128,dy=-512,dz=2097152,scores={存储目的地=5}] run tp ~128~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=64,dy=-512,dz=2097152,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储x5 64
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=64,dy=-512,dz=2097152,scores={存储目的地=5}] run tp ~64~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=32,dy=-512,dz=2097152,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储x5 32
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=32,dy=-512,dz=2097152,scores={存储目的地=5}] run tp ~32~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=16,dy=-512,dz=2097152,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储x5 16
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=16,dy=-512,dz=2097152,scores={存储目的地=5}] run tp ~16~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=8,dy=-512,dz=2097152,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储x5 8
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=8,dy=-512,dz=2097152,scores={存储目的地=5}] run tp ~8~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=4,dy=-512,dz=2097152,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储x5 4
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=4,dy=-512,dz=2097152,scores={存储目的地=5}] run tp ~4~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=2,dy=-512,dz=2097152,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储x5 2
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=2,dy=-512,dz=2097152,scores={存储目的地=5}] run tp ~2~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2097152,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储x5 1
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2097152,scores={存储目的地=5}] run tp ~1~~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1048576,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储z5 1048576
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1048576,scores={存储目的地=5}] run tp ~~~1048576
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=524288,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储z5 524288
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=524288,scores={存储目的地=5}] run tp ~~~524288
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=262144,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储z5 262144
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=262144,scores={存储目的地=5}] run tp ~~~262144
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=131072,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储z5 131072
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=131072,scores={存储目的地=5}] run tp ~~~131072
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=65536,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储z5 65536
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=65536,scores={存储目的地=5}] run tp ~~~65536
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=32768,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储z5 32768
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=32768,scores={存储目的地=5}] run tp ~~~32768
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=16384,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储z5 16384
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=16384,scores={存储目的地=5}] run tp ~~~16384
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=8192,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储z5 8192
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=8192,scores={存储目的地=5}] run tp ~~~8192
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=4096,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储z5 4096
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=4096,scores={存储目的地=5}] run tp ~~~4096
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2048,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储z5 2048
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2048,scores={存储目的地=5}] run tp ~~~2048
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1024,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储z5 1024
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1024,scores={存储目的地=5}] run tp ~~~1024
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=512,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储z5 512
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=512,scores={存储目的地=5}] run tp ~~~512
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=256,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储z5 256
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=256,scores={存储目的地=5}] run tp ~~~256
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=128,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储z5 128
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=128,scores={存储目的地=5}] run tp ~~~128
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=64,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储z5 64
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=64,scores={存储目的地=5}] run tp ~~~64
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=32,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储z5 32
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=32,scores={存储目的地=5}] run tp ~~~32
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=16,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储z5 16
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=16,scores={存储目的地=5}] run tp ~~~16
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=8,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储z5 8
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=8,scores={存储目的地=5}] run tp ~~~8
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=4,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储z5 4
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=4,scores={存储目的地=5}] run tp ~~~4
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储z5 2
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=2,scores={存储目的地=5}] run tp ~~~2
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储z5 1
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-512,dz=1,scores={存储目的地=5}] run tp ~~~1
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-256,dz=1,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储y5 -256
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-256,dz=1,scores={存储目的地=5}] run tp ~~-256~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-128,dz=1,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储y5 -128
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-128,dz=1,scores={存储目的地=5}] run tp ~~-128~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-64,dz=1,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储y5 -64
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-64,dz=1,scores={存储目的地=5}] run tp ~~-64~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-32,dz=1,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储y5 -32
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-32,dz=1,scores={存储目的地=5}] run tp ~~-32~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-16,dz=1,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储y5 -16
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-16,dz=1,scores={存储目的地=5}] run tp ~~-16~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-8,dz=1,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储y5 -8
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-8,dz=1,scores={存储目的地=5}] run tp ~~-8~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-4,dz=1,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储y5 -4
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-4,dz=1,scores={存储目的地=5}] run tp ~~-4~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-2,dz=1,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储y5 -2
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-2,dz=1,scores={存储目的地=5}] run tp ~~-2~
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-1,dz=1,scores={存储目的地=5}] run scoreboard players add @a[scores={存储目的地=5}] 存储y5 -1
+execute as @e[type=armor_stand,name=定位] at @s unless entity @a[dx=1,dy=-1,dz=1,scores={存储目的地=5}] run tp ~~-1~
+
+testfor @a[scores={传送目的地=1]
+cp
+scoreboard players set @a[scores={传送目的地=1}] 当前x 0
+scoreboard players set @a[scores={传送目的地=1}] 当前y 0
+scoreboard players set @a[scores={传送目的地=1}] 当前z 0
+tp @a[scores={传送目的地=1}] 0 128 0
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run tp @s ~524288~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x 524288
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run tp @s ~-524288~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x -524288
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run tp @s ~262144~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x 262144
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run tp @s ~-262144~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x -262144
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run tp @s ~131072~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x 131072
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run tp @s ~-131072~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x -131072
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run tp @s ~65536~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x 65536
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run tp @s ~-65536~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x -65536
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run tp @s ~32768~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x 32768
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run tp @s ~-32768~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x -32768
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run tp @s ~16384~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x 16384
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run tp @s ~-16384~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x -16384
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run tp @s ~8192~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x 8192
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run tp @s ~-8192~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x -8192
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run tp @s ~4096~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x 4096
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run tp @s ~-4096~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x -4096
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run tp @s ~2048~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x 2048
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run tp @s ~-2048~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x -2048
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run tp @s ~1024~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x 1024
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run tp @s ~-1024~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x -1024
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run tp @s ~512~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x 512
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run tp @s ~-512~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x -512
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run tp @s ~256~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x 256
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run tp @s ~-256~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x -256
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run tp @s ~128~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x 128
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run tp @s ~-128~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x -128
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run tp @s ~64~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x 64
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run tp @s ~-64~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x -64
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run tp @s ~32~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x 32
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run tp @s ~-32~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x -32
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run tp @s ~16~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x 16
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run tp @s ~-16~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x -16
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run tp @s ~8~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x 8
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run tp @s ~-8~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x -8
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run tp @s ~4~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x 4
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run tp @s ~-4~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x -4
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run tp @s ~2~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x 2
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run tp @s ~-2~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x -2
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run tp @s ~1~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x < @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x 1
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run tp @s ~-1~~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前x > @s 存储x1 run scoreboard players add @a[scores={传送目的地=1}] 当前x -1
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y < @s 存储y1 run tp @s ~~256~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y < @s 存储y1 run scoreboard players add @a[scores={传送目的地=1}] 当前y 256
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y > @s 存储y1 run tp @s ~~-256~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y > @s 存储y1 run scoreboard players add @a[scores={传送目的地=1}] 当前y -256
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y < @s 存储y1 run tp @s ~~128~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y < @s 存储y1 run scoreboard players add @a[scores={传送目的地=1}] 当前y 128
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y > @s 存储y1 run tp @s ~~-128~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y > @s 存储y1 run scoreboard players add @a[scores={传送目的地=1}] 当前y -128
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y < @s 存储y1 run tp @s ~~64~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y < @s 存储y1 run scoreboard players add @a[scores={传送目的地=1}] 当前y 64
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y > @s 存储y1 run tp @s ~~-64~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y > @s 存储y1 run scoreboard players add @a[scores={传送目的地=1}] 当前y -64
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y < @s 存储y1 run tp @s ~~32~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y < @s 存储y1 run scoreboard players add @a[scores={传送目的地=1}] 当前y 32
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y > @s 存储y1 run tp @s ~~-32~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y > @s 存储y1 run scoreboard players add @a[scores={传送目的地=1}] 当前y -32
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y < @s 存储y1 run tp @s ~~16~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y < @s 存储y1 run scoreboard players add @a[scores={传送目的地=1}] 当前y 16
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y > @s 存储y1 run tp @s ~~-16~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y > @s 存储y1 run scoreboard players add @a[scores={传送目的地=1}] 当前y -16
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y < @s 存储y1 run tp @s ~~8~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y < @s 存储y1 run scoreboard players add @a[scores={传送目的地=1}] 当前y 8
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y > @s 存储y1 run tp @s ~~-8~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y > @s 存储y1 run scoreboard players add @a[scores={传送目的地=1}] 当前y -8
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y < @s 存储y1 run tp @s ~~4~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y < @s 存储y1 run scoreboard players add @a[scores={传送目的地=1}] 当前y 4
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y > @s 存储y1 run tp @s ~~-4~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y > @s 存储y1 run scoreboard players add @a[scores={传送目的地=1}] 当前y -4
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y < @s 存储y1 run tp @s ~~2~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y < @s 存储y1 run scoreboard players add @a[scores={传送目的地=1}] 当前y 2
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y > @s 存储y1 run tp @s ~~-2~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y > @s 存储y1 run scoreboard players add @a[scores={传送目的地=1}] 当前y -2
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y < @s 存储y1 run tp @s ~~1~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y < @s 存储y1 run scoreboard players add @a[scores={传送目的地=1}] 当前y 1
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y > @s 存储y1 run tp @s ~~-1~
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前y > @s 存储y1 run scoreboard players add @a[scores={传送目的地=1}] 当前y -1
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run tp @s ~~~524288
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z 524288
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run tp @s ~~~-524288
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z -524288
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run tp @s ~~~262144
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z 262144
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run tp @s ~~~-262144
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z -262144
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run tp @s ~~~131072
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z 131072
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run tp @s ~~~-131072
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z -131072
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run tp @s ~~~65536
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z 65536
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run tp @s ~~~-65536
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z -65536
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run tp @s ~~~32768
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z 32768
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run tp @s ~~~-32768
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z -32768
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run tp @s ~~~16384
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z 16384
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run tp @s ~~~-16384
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z -16384
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run tp @s ~~~8192
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z 8192
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run tp @s ~~~-8192
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z -8192
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run tp @s ~~~4096
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z 4096
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run tp @s ~~~-4096
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z -4096
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run tp @s ~~~2048
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z 2048
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run tp @s ~~~-2048
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z -2048
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run tp @s ~~~1024
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z 1024
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run tp @s ~~~-1024
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z -1024
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run tp @s ~~~512
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z 512
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run tp @s ~~~-512
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z -512
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run tp @s ~~~256
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z 256
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run tp @s ~~~-256
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z -256
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run tp @s ~~~128
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z 128
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run tp @s ~~~-128
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z -128
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run tp @s ~~~64
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z 64
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run tp @s ~~~-64
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z -64
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run tp @s ~~~32
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z 32
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run tp @s ~~~-32
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z -32
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run tp @s ~~~16
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z 16
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run tp @s ~~~-16
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z -16
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run tp @s ~~~8
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z 8
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run tp @s ~~~-8
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z -8
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run tp @s ~~~4
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z 4
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run tp @s ~~~-4
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z -4
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run tp @s ~~~2
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z 2
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run tp @s ~~~-2
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z -2
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run tp @s ~~~1
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z < @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z 1
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run tp @s ~~~-1
+execute as @a[scores={传送目的地=1}] at @s if score @s 当前z > @s 存储z1 run scoreboard players add @a[scores={传送目的地=1}] 当前z -1
+
+testfor @a[scores={传送目的地=2]
+cp
+scoreboard players set @a[scores={传送目的地=2}] 当前x 0
+scoreboard players set @a[scores={传送目的地=2}] 当前y 0
+scoreboard players set @a[scores={传送目的地=2}] 当前z 0
+tp @a[scores={传送目的地=2}] 0 128 0
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run tp @s ~524288~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x 524288
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run tp @s ~-524288~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x -524288
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run tp @s ~262144~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x 262144
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run tp @s ~-262144~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x -262144
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run tp @s ~131072~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x 131072
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run tp @s ~-131072~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x -131072
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run tp @s ~65536~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x 65536
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run tp @s ~-65536~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x -65536
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run tp @s ~32768~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x 32768
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run tp @s ~-32768~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x -32768
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run tp @s ~16384~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x 16384
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run tp @s ~-16384~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x -16384
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run tp @s ~8192~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x 8192
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run tp @s ~-8192~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x -8192
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run tp @s ~4096~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x 4096
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run tp @s ~-4096~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x -4096
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run tp @s ~2048~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x 2048
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run tp @s ~-2048~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x -2048
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run tp @s ~1024~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x 1024
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run tp @s ~-1024~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x -1024
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run tp @s ~512~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x 512
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run tp @s ~-512~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x -512
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run tp @s ~256~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x 256
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run tp @s ~-256~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x -256
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run tp @s ~128~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x 128
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run tp @s ~-128~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x -128
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run tp @s ~64~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x 64
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run tp @s ~-64~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x -64
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run tp @s ~32~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x 32
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run tp @s ~-32~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x -32
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run tp @s ~16~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x 16
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run tp @s ~-16~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x -16
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run tp @s ~8~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x 8
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run tp @s ~-8~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x -8
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run tp @s ~4~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x 4
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run tp @s ~-4~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x -4
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run tp @s ~2~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x 2
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run tp @s ~-2~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x -2
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run tp @s ~1~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x < @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x 1
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run tp @s ~-1~~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前x > @s 存储x2 run scoreboard players add @a[scores={传送目的地=2}] 当前x -1
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y < @s 存储y2 run tp @s ~~256~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y < @s 存储y2 run scoreboard players add @a[scores={传送目的地=2}] 当前y 256
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y > @s 存储y2 run tp @s ~~-256~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y > @s 存储y2 run scoreboard players add @a[scores={传送目的地=2}] 当前y -256
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y < @s 存储y2 run tp @s ~~128~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y < @s 存储y2 run scoreboard players add @a[scores={传送目的地=2}] 当前y 128
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y > @s 存储y2 run tp @s ~~-128~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y > @s 存储y2 run scoreboard players add @a[scores={传送目的地=2}] 当前y -128
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y < @s 存储y2 run tp @s ~~64~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y < @s 存储y2 run scoreboard players add @a[scores={传送目的地=2}] 当前y 64
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y > @s 存储y2 run tp @s ~~-64~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y > @s 存储y2 run scoreboard players add @a[scores={传送目的地=2}] 当前y -64
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y < @s 存储y2 run tp @s ~~32~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y < @s 存储y2 run scoreboard players add @a[scores={传送目的地=2}] 当前y 32
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y > @s 存储y2 run tp @s ~~-32~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y > @s 存储y2 run scoreboard players add @a[scores={传送目的地=2}] 当前y -32
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y < @s 存储y2 run tp @s ~~16~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y < @s 存储y2 run scoreboard players add @a[scores={传送目的地=2}] 当前y 16
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y > @s 存储y2 run tp @s ~~-16~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y > @s 存储y2 run scoreboard players add @a[scores={传送目的地=2}] 当前y -16
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y < @s 存储y2 run tp @s ~~8~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y < @s 存储y2 run scoreboard players add @a[scores={传送目的地=2}] 当前y 8
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y > @s 存储y2 run tp @s ~~-8~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y > @s 存储y2 run scoreboard players add @a[scores={传送目的地=2}] 当前y -8
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y < @s 存储y2 run tp @s ~~4~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y < @s 存储y2 run scoreboard players add @a[scores={传送目的地=2}] 当前y 4
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y > @s 存储y2 run tp @s ~~-4~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y > @s 存储y2 run scoreboard players add @a[scores={传送目的地=2}] 当前y -4
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y < @s 存储y2 run tp @s ~~2~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y < @s 存储y2 run scoreboard players add @a[scores={传送目的地=2}] 当前y 2
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y > @s 存储y2 run tp @s ~~-2~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y > @s 存储y2 run scoreboard players add @a[scores={传送目的地=2}] 当前y -2
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y < @s 存储y2 run tp @s ~~1~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y < @s 存储y2 run scoreboard players add @a[scores={传送目的地=2}] 当前y 1
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y > @s 存储y2 run tp @s ~~-1~
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前y > @s 存储y2 run scoreboard players add @a[scores={传送目的地=2}] 当前y -1
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run tp @s ~~~524288
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z 524288
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run tp @s ~~~-524288
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z -524288
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run tp @s ~~~262144
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z 262144
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run tp @s ~~~-262144
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z -262144
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run tp @s ~~~131072
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z 131072
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run tp @s ~~~-131072
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z -131072
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run tp @s ~~~65536
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z 65536
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run tp @s ~~~-65536
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z -65536
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run tp @s ~~~32768
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z 32768
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run tp @s ~~~-32768
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z -32768
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run tp @s ~~~16384
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z 16384
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run tp @s ~~~-16384
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z -16384
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run tp @s ~~~8192
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z 8192
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run tp @s ~~~-8192
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z -8192
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run tp @s ~~~4096
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z 4096
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run tp @s ~~~-4096
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z -4096
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run tp @s ~~~2048
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z 2048
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run tp @s ~~~-2048
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z -2048
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run tp @s ~~~1024
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z 1024
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run tp @s ~~~-1024
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z -1024
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run tp @s ~~~512
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z 512
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run tp @s ~~~-512
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z -512
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run tp @s ~~~256
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z 256
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run tp @s ~~~-256
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z -256
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run tp @s ~~~128
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z 128
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run tp @s ~~~-128
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z -128
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run tp @s ~~~64
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z 64
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run tp @s ~~~-64
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z -64
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run tp @s ~~~32
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z 32
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run tp @s ~~~-32
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z -32
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run tp @s ~~~16
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z 16
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run tp @s ~~~-16
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z -16
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run tp @s ~~~8
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z 8
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run tp @s ~~~-8
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z -8
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run tp @s ~~~4
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z 4
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run tp @s ~~~-4
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z -4
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run tp @s ~~~2
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z 2
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run tp @s ~~~-2
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z -2
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run tp @s ~~~1
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z < @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z 1
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run tp @s ~~~-1
+execute as @a[scores={传送目的地=2}] at @s if score @s 当前z > @s 存储z2 run scoreboard players add @a[scores={传送目的地=2}] 当前z -1
+
+testfor @a[scores={传送目的地=3]
+cp
+scoreboard players set @a[scores={传送目的地=3}] 当前x 0
+scoreboard players set @a[scores={传送目的地=3}] 当前y 0
+scoreboard players set @a[scores={传送目的地=3}] 当前z 0
+tp @a[scores={传送目的地=3}] 0 128 0
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run tp @s ~524288~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x 524288
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run tp @s ~-524288~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x -524288
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run tp @s ~262144~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x 262144
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run tp @s ~-262144~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x -262144
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run tp @s ~131072~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x 131072
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run tp @s ~-131072~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x -131072
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run tp @s ~65536~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x 65536
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run tp @s ~-65536~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x -65536
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run tp @s ~32768~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x 32768
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run tp @s ~-32768~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x -32768
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run tp @s ~16384~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x 16384
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run tp @s ~-16384~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x -16384
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run tp @s ~8192~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x 8192
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run tp @s ~-8192~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x -8192
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run tp @s ~4096~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x 4096
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run tp @s ~-4096~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x -4096
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run tp @s ~2048~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x 2048
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run tp @s ~-2048~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x -2048
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run tp @s ~1024~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x 1024
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run tp @s ~-1024~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x -1024
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run tp @s ~512~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x 512
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run tp @s ~-512~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x -512
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run tp @s ~256~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x 256
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run tp @s ~-256~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x -256
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run tp @s ~128~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x 128
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run tp @s ~-128~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x -128
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run tp @s ~64~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x 64
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run tp @s ~-64~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x -64
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run tp @s ~32~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x 32
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run tp @s ~-32~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x -32
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run tp @s ~16~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x 16
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run tp @s ~-16~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x -16
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run tp @s ~8~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x 8
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run tp @s ~-8~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x -8
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run tp @s ~4~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x 4
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run tp @s ~-4~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x -4
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run tp @s ~2~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x 2
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run tp @s ~-2~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x -2
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run tp @s ~1~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x < @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x 1
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run tp @s ~-1~~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前x > @s 存储x3 run scoreboard players add @a[scores={传送目的地=3}] 当前x -1
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y < @s 存储y3 run tp @s ~~256~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y < @s 存储y3 run scoreboard players add @a[scores={传送目的地=3}] 当前y 256
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y > @s 存储y3 run tp @s ~~-256~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y > @s 存储y3 run scoreboard players add @a[scores={传送目的地=3}] 当前y -256
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y < @s 存储y3 run tp @s ~~128~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y < @s 存储y3 run scoreboard players add @a[scores={传送目的地=3}] 当前y 128
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y > @s 存储y3 run tp @s ~~-128~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y > @s 存储y3 run scoreboard players add @a[scores={传送目的地=3}] 当前y -128
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y < @s 存储y3 run tp @s ~~64~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y < @s 存储y3 run scoreboard players add @a[scores={传送目的地=3}] 当前y 64
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y > @s 存储y3 run tp @s ~~-64~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y > @s 存储y3 run scoreboard players add @a[scores={传送目的地=3}] 当前y -64
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y < @s 存储y3 run tp @s ~~32~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y < @s 存储y3 run scoreboard players add @a[scores={传送目的地=3}] 当前y 32
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y > @s 存储y3 run tp @s ~~-32~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y > @s 存储y3 run scoreboard players add @a[scores={传送目的地=3}] 当前y -32
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y < @s 存储y3 run tp @s ~~16~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y < @s 存储y3 run scoreboard players add @a[scores={传送目的地=3}] 当前y 16
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y > @s 存储y3 run tp @s ~~-16~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y > @s 存储y3 run scoreboard players add @a[scores={传送目的地=3}] 当前y -16
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y < @s 存储y3 run tp @s ~~8~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y < @s 存储y3 run scoreboard players add @a[scores={传送目的地=3}] 当前y 8
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y > @s 存储y3 run tp @s ~~-8~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y > @s 存储y3 run scoreboard players add @a[scores={传送目的地=3}] 当前y -8
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y < @s 存储y3 run tp @s ~~4~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y < @s 存储y3 run scoreboard players add @a[scores={传送目的地=3}] 当前y 4
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y > @s 存储y3 run tp @s ~~-4~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y > @s 存储y3 run scoreboard players add @a[scores={传送目的地=3}] 当前y -4
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y < @s 存储y3 run tp @s ~~2~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y < @s 存储y3 run scoreboard players add @a[scores={传送目的地=3}] 当前y 2
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y > @s 存储y3 run tp @s ~~-2~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y > @s 存储y3 run scoreboard players add @a[scores={传送目的地=3}] 当前y -2
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y < @s 存储y3 run tp @s ~~1~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y < @s 存储y3 run scoreboard players add @a[scores={传送目的地=3}] 当前y 1
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y > @s 存储y3 run tp @s ~~-1~
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前y > @s 存储y3 run scoreboard players add @a[scores={传送目的地=3}] 当前y -1
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run tp @s ~~~524288
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z 524288
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run tp @s ~~~-524288
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z -524288
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run tp @s ~~~262144
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z 262144
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run tp @s ~~~-262144
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z -262144
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run tp @s ~~~131072
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z 131072
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run tp @s ~~~-131072
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z -131072
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run tp @s ~~~65536
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z 65536
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run tp @s ~~~-65536
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z -65536
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run tp @s ~~~32768
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z 32768
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run tp @s ~~~-32768
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z -32768
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run tp @s ~~~16384
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z 16384
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run tp @s ~~~-16384
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z -16384
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run tp @s ~~~8192
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z 8192
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run tp @s ~~~-8192
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z -8192
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run tp @s ~~~4096
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z 4096
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run tp @s ~~~-4096
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z -4096
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run tp @s ~~~2048
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z 2048
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run tp @s ~~~-2048
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z -2048
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run tp @s ~~~1024
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z 1024
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run tp @s ~~~-1024
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z -1024
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run tp @s ~~~512
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z 512
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run tp @s ~~~-512
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z -512
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run tp @s ~~~256
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z 256
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run tp @s ~~~-256
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z -256
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run tp @s ~~~128
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z 128
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run tp @s ~~~-128
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z -128
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run tp @s ~~~64
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z 64
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run tp @s ~~~-64
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z -64
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run tp @s ~~~32
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z 32
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run tp @s ~~~-32
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z -32
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run tp @s ~~~16
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z 16
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run tp @s ~~~-16
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z -16
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run tp @s ~~~8
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z 8
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run tp @s ~~~-8
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z -8
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run tp @s ~~~4
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z 4
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run tp @s ~~~-4
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z -4
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run tp @s ~~~2
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z 2
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run tp @s ~~~-2
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z -2
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run tp @s ~~~1
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z < @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z 1
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run tp @s ~~~-1
+execute as @a[scores={传送目的地=3}] at @s if score @s 当前z > @s 存储z3 run scoreboard players add @a[scores={传送目的地=3}] 当前z -1
+
+testfor @a[scores={传送目的地=4]
+cp
+scoreboard players set @a[scores={传送目的地=4}] 当前x 0
+scoreboard players set @a[scores={传送目的地=4}] 当前y 0
+scoreboard players set @a[scores={传送目的地=4}] 当前z 0
+tp @a[scores={传送目的地=4}] 0 128 0
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run tp @s ~524288~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x 524288
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run tp @s ~-524288~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x -524288
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run tp @s ~262144~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x 262144
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run tp @s ~-262144~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x -262144
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run tp @s ~131072~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x 131072
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run tp @s ~-131072~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x -131072
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run tp @s ~65536~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x 65536
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run tp @s ~-65536~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x -65536
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run tp @s ~32768~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x 32768
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run tp @s ~-32768~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x -32768
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run tp @s ~16384~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x 16384
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run tp @s ~-16384~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x -16384
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run tp @s ~8192~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x 8192
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run tp @s ~-8192~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x -8192
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run tp @s ~4096~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x 4096
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run tp @s ~-4096~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x -4096
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run tp @s ~2048~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x 2048
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run tp @s ~-2048~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x -2048
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run tp @s ~1024~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x 1024
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run tp @s ~-1024~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x -1024
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run tp @s ~512~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x 512
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run tp @s ~-512~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x -512
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run tp @s ~256~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x 256
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run tp @s ~-256~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x -256
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run tp @s ~128~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x 128
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run tp @s ~-128~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x -128
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run tp @s ~64~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x 64
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run tp @s ~-64~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x -64
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run tp @s ~32~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x 32
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run tp @s ~-32~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x -32
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run tp @s ~16~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x 16
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run tp @s ~-16~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x -16
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run tp @s ~8~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x 8
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run tp @s ~-8~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x -8
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run tp @s ~4~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x 4
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run tp @s ~-4~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x -4
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run tp @s ~2~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x 2
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run tp @s ~-2~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x -2
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run tp @s ~1~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x < @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x 1
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run tp @s ~-1~~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前x > @s 存储x4 run scoreboard players add @a[scores={传送目的地=4}] 当前x -1
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y < @s 存储y4 run tp @s ~~256~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y < @s 存储y4 run scoreboard players add @a[scores={传送目的地=4}] 当前y 256
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y > @s 存储y4 run tp @s ~~-256~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y > @s 存储y4 run scoreboard players add @a[scores={传送目的地=4}] 当前y -256
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y < @s 存储y4 run tp @s ~~128~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y < @s 存储y4 run scoreboard players add @a[scores={传送目的地=4}] 当前y 128
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y > @s 存储y4 run tp @s ~~-128~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y > @s 存储y4 run scoreboard players add @a[scores={传送目的地=4}] 当前y -128
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y < @s 存储y4 run tp @s ~~64~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y < @s 存储y4 run scoreboard players add @a[scores={传送目的地=4}] 当前y 64
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y > @s 存储y4 run tp @s ~~-64~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y > @s 存储y4 run scoreboard players add @a[scores={传送目的地=4}] 当前y -64
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y < @s 存储y4 run tp @s ~~32~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y < @s 存储y4 run scoreboard players add @a[scores={传送目的地=4}] 当前y 32
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y > @s 存储y4 run tp @s ~~-32~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y > @s 存储y4 run scoreboard players add @a[scores={传送目的地=4}] 当前y -32
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y < @s 存储y4 run tp @s ~~16~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y < @s 存储y4 run scoreboard players add @a[scores={传送目的地=4}] 当前y 16
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y > @s 存储y4 run tp @s ~~-16~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y > @s 存储y4 run scoreboard players add @a[scores={传送目的地=4}] 当前y -16
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y < @s 存储y4 run tp @s ~~8~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y < @s 存储y4 run scoreboard players add @a[scores={传送目的地=4}] 当前y 8
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y > @s 存储y4 run tp @s ~~-8~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y > @s 存储y4 run scoreboard players add @a[scores={传送目的地=4}] 当前y -8
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y < @s 存储y4 run tp @s ~~4~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y < @s 存储y4 run scoreboard players add @a[scores={传送目的地=4}] 当前y 4
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y > @s 存储y4 run tp @s ~~-4~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y > @s 存储y4 run scoreboard players add @a[scores={传送目的地=4}] 当前y -4
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y < @s 存储y4 run tp @s ~~2~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y < @s 存储y4 run scoreboard players add @a[scores={传送目的地=4}] 当前y 2
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y > @s 存储y4 run tp @s ~~-2~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y > @s 存储y4 run scoreboard players add @a[scores={传送目的地=4}] 当前y -2
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y < @s 存储y4 run tp @s ~~1~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y < @s 存储y4 run scoreboard players add @a[scores={传送目的地=4}] 当前y 1
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y > @s 存储y4 run tp @s ~~-1~
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前y > @s 存储y4 run scoreboard players add @a[scores={传送目的地=4}] 当前y -1
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run tp @s ~~~524288
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z 524288
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run tp @s ~~~-524288
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z -524288
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run tp @s ~~~262144
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z 262144
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run tp @s ~~~-262144
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z -262144
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run tp @s ~~~131072
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z 131072
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run tp @s ~~~-131072
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z -131072
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run tp @s ~~~65536
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z 65536
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run tp @s ~~~-65536
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z -65536
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run tp @s ~~~32768
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z 32768
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run tp @s ~~~-32768
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z -32768
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run tp @s ~~~16384
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z 16384
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run tp @s ~~~-16384
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z -16384
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run tp @s ~~~8192
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z 8192
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run tp @s ~~~-8192
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z -8192
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run tp @s ~~~4096
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z 4096
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run tp @s ~~~-4096
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z -4096
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run tp @s ~~~2048
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z 2048
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run tp @s ~~~-2048
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z -2048
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run tp @s ~~~1024
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z 1024
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run tp @s ~~~-1024
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z -1024
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run tp @s ~~~512
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z 512
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run tp @s ~~~-512
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z -512
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run tp @s ~~~256
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z 256
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run tp @s ~~~-256
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z -256
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run tp @s ~~~128
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z 128
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run tp @s ~~~-128
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z -128
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run tp @s ~~~64
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z 64
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run tp @s ~~~-64
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z -64
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run tp @s ~~~32
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z 32
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run tp @s ~~~-32
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z -32
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run tp @s ~~~16
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z 16
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run tp @s ~~~-16
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z -16
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run tp @s ~~~8
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z 8
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run tp @s ~~~-8
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z -8
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run tp @s ~~~4
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z 4
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run tp @s ~~~-4
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z -4
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run tp @s ~~~2
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z 2
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run tp @s ~~~-2
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z -2
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run tp @s ~~~1
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z < @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z 1
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run tp @s ~~~-1
+execute as @a[scores={传送目的地=4}] at @s if score @s 当前z > @s 存储z4 run scoreboard players add @a[scores={传送目的地=4}] 当前z -1
+
+testfor @a[scores={传送目的地=5]
+cp
+scoreboard players set @a[scores={传送目的地=5}] 当前x 0
+scoreboard players set @a[scores={传送目的地=5}] 当前y 0
+scoreboard players set @a[scores={传送目的地=5}] 当前z 0
+tp @a[scores={传送目的地=5}] 0 128 0
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run tp @s ~524288~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x 524288
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run tp @s ~-524288~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x -524288
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run tp @s ~262144~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x 262144
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run tp @s ~-262144~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x -262144
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run tp @s ~131072~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x 131072
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run tp @s ~-131072~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x -131072
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run tp @s ~65536~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x 65536
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run tp @s ~-65536~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x -65536
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run tp @s ~32768~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x 32768
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run tp @s ~-32768~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x -32768
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run tp @s ~16384~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x 16384
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run tp @s ~-16384~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x -16384
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run tp @s ~8192~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x 8192
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run tp @s ~-8192~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x -8192
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run tp @s ~4096~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x 4096
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run tp @s ~-4096~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x -4096
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run tp @s ~2048~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x 2048
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run tp @s ~-2048~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x -2048
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run tp @s ~1024~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x 1024
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run tp @s ~-1024~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x -1024
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run tp @s ~512~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x 512
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run tp @s ~-512~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x -512
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run tp @s ~256~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x 256
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run tp @s ~-256~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x -256
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run tp @s ~128~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x 128
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run tp @s ~-128~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x -128
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run tp @s ~64~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x 64
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run tp @s ~-64~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x -64
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run tp @s ~32~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x 32
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run tp @s ~-32~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x -32
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run tp @s ~16~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x 16
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run tp @s ~-16~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x -16
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run tp @s ~8~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x 8
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run tp @s ~-8~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x -8
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run tp @s ~4~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x 4
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run tp @s ~-4~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x -4
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run tp @s ~2~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x 2
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run tp @s ~-2~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x -2
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run tp @s ~1~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x < @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x 1
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run tp @s ~-1~~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前x > @s 存储x5 run scoreboard players add @a[scores={传送目的地=5}] 当前x -1
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y < @s 存储y5 run tp @s ~~256~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y < @s 存储y5 run scoreboard players add @a[scores={传送目的地=5}] 当前y 256
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y > @s 存储y5 run tp @s ~~-256~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y > @s 存储y5 run scoreboard players add @a[scores={传送目的地=5}] 当前y -256
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y < @s 存储y5 run tp @s ~~128~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y < @s 存储y5 run scoreboard players add @a[scores={传送目的地=5}] 当前y 128
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y > @s 存储y5 run tp @s ~~-128~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y > @s 存储y5 run scoreboard players add @a[scores={传送目的地=5}] 当前y -128
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y < @s 存储y5 run tp @s ~~64~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y < @s 存储y5 run scoreboard players add @a[scores={传送目的地=5}] 当前y 64
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y > @s 存储y5 run tp @s ~~-64~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y > @s 存储y5 run scoreboard players add @a[scores={传送目的地=5}] 当前y -64
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y < @s 存储y5 run tp @s ~~32~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y < @s 存储y5 run scoreboard players add @a[scores={传送目的地=5}] 当前y 32
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y > @s 存储y5 run tp @s ~~-32~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y > @s 存储y5 run scoreboard players add @a[scores={传送目的地=5}] 当前y -32
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y < @s 存储y5 run tp @s ~~16~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y < @s 存储y5 run scoreboard players add @a[scores={传送目的地=5}] 当前y 16
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y > @s 存储y5 run tp @s ~~-16~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y > @s 存储y5 run scoreboard players add @a[scores={传送目的地=5}] 当前y -16
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y < @s 存储y5 run tp @s ~~8~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y < @s 存储y5 run scoreboard players add @a[scores={传送目的地=5}] 当前y 8
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y > @s 存储y5 run tp @s ~~-8~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y > @s 存储y5 run scoreboard players add @a[scores={传送目的地=5}] 当前y -8
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y < @s 存储y5 run tp @s ~~4~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y < @s 存储y5 run scoreboard players add @a[scores={传送目的地=5}] 当前y 4
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y > @s 存储y5 run tp @s ~~-4~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y > @s 存储y5 run scoreboard players add @a[scores={传送目的地=5}] 当前y -4
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y < @s 存储y5 run tp @s ~~2~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y < @s 存储y5 run scoreboard players add @a[scores={传送目的地=5}] 当前y 2
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y > @s 存储y5 run tp @s ~~-2~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y > @s 存储y5 run scoreboard players add @a[scores={传送目的地=5}] 当前y -2
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y < @s 存储y5 run tp @s ~~1~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y < @s 存储y5 run scoreboard players add @a[scores={传送目的地=5}] 当前y 1
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y > @s 存储y5 run tp @s ~~-1~
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前y > @s 存储y5 run scoreboard players add @a[scores={传送目的地=5}] 当前y -1
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run tp @s ~~~524288
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z 524288
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run tp @s ~~~-524288
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z -524288
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run tp @s ~~~262144
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z 262144
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run tp @s ~~~-262144
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z -262144
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run tp @s ~~~131072
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z 131072
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run tp @s ~~~-131072
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z -131072
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run tp @s ~~~65536
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z 65536
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run tp @s ~~~-65536
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z -65536
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run tp @s ~~~32768
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z 32768
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run tp @s ~~~-32768
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z -32768
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run tp @s ~~~16384
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z 16384
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run tp @s ~~~-16384
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z -16384
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run tp @s ~~~8192
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z 8192
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run tp @s ~~~-8192
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z -8192
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run tp @s ~~~4096
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z 4096
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run tp @s ~~~-4096
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z -4096
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run tp @s ~~~2048
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z 2048
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run tp @s ~~~-2048
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z -2048
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run tp @s ~~~1024
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z 1024
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run tp @s ~~~-1024
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z -1024
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run tp @s ~~~512
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z 512
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run tp @s ~~~-512
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z -512
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run tp @s ~~~256
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z 256
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run tp @s ~~~-256
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z -256
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run tp @s ~~~128
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z 128
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run tp @s ~~~-128
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z -128
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run tp @s ~~~64
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z 64
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run tp @s ~~~-64
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z -64
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run tp @s ~~~32
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z 32
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run tp @s ~~~-32
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z -32
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run tp @s ~~~16
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z 16
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run tp @s ~~~-16
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z -16
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run tp @s ~~~8
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z 8
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run tp @s ~~~-8
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z -8
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run tp @s ~~~4
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z 4
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run tp @s ~~~-4
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z -4
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run tp @s ~~~2
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z 2
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run tp @s ~~~-2
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z -2
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run tp @s ~~~1
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z < @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z 1
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run tp @s ~~~-1
+execute as @a[scores={传送目的地=5}] at @s if score @s 当前z > @s 存储z5 run scoreboard players add @a[scores={传送目的地=5}] 当前z -1
+
